@@ -3,7 +3,6 @@
     line-height: 16px;
     padding-bottom: 20px;
     color: #e3c8c7;
-    font-family: 'open_sanslight';
 }
 
 .getInTouch .mainList {
@@ -28,12 +27,6 @@
   padding-bottom: 15px;
 }
 
-.getInTouch .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-}
 
 .getInTouch li.footer-address {
   padding-bottom: 15px;

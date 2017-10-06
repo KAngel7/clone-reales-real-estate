@@ -3,7 +3,6 @@
     line-height: 16px;
     padding-bottom: 20px;
     color: #e3c8c7;
-    font-family: 'open_sanslight';
 }
 
 .listComp .listMain{
@@ -20,9 +19,6 @@
 
 .listComp .listMain li a {
     color: #fff;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-    background: transparent;
 }
 
 .listComp .listMain li a:hover {

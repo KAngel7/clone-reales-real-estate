@@ -27,10 +27,10 @@ class FooterContainer extends React.Component<{}, {}> {
   render() {
     return (
       <div className="footerContainer">
-        <div className="footerRow">
+        <div className="row">
             <ListComp list={this.listCompany}>Company</ListComp>
             <ListComp list={this.listDiscover}>Discover</ListComp>
-            <GetInTouch />
+            <GetInTouch>Get in Touch</GetInTouch>
             <Subscribe />
         </div>
         <div className="footerCopyRight">

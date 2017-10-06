@@ -6,7 +6,7 @@ class GetInTouch extends React.Component<{}, {}> {
   render() {
     return (
       <div className="getInTouch col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <div className="touchTitle">
+        <div className="touchTitle osLight">
           {this.props.children}
         </div>
         <ul className="mainList">
