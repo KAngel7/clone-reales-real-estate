@@ -3,7 +3,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   min-width: 320px;
-  font-family: "Roboto", Arial, Helvetica;
   line-height: 1;
   color: #111;
   background: #fff;
@@ -12,7 +11,8 @@ body {
 
 html, body {
   height: 100%;
-  font-size: 14px;
+  font-family: 'open_sansregular', sans-serif, Arial;
+  font-size: 13px;
 }
 
 *, *:before, *:after {
@@ -123,14 +123,8 @@ form {
   margin-top: 0em;
 }
 
-input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
-  padding: 1px 0px;
-}
-
 input {
-  -webkit-appearance: textfield;
   background-color: white;
-  -webkit-rtl-ordering: logical;
   user-select: text;
   cursor: auto;
   padding: 1px;

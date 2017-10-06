@@ -6,7 +6,7 @@ class Subscribe extends React.Component<{}, {}> {
   render() {
     return (
       <div className="subComp col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <div className="subCompTitle">{this.props.children}</div>
+        <div className="subCompTitle osLight">{this.props.children}</div>
         <form role="form">
           <div className="form-group">
             <input type="email" className="form-control" placeholder="Email Address" />
