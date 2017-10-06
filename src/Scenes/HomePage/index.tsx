@@ -14,7 +14,7 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
         <div className="bodyWrapper container">
           {}
         </div>
-        <div className="footerWrapper container">
+        <div className="footerWrapper">
           <Footer />
         </div>
       </div>
