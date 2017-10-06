@@ -1,5 +1,5 @@
-.slideshow {
-  position: relative;
+.slideShow {
+  
 }
 .cbSlideshow {
   position: absolute;
@@ -10,7 +10,7 @@
   z-index: 0;
   list-style-type: none;
   margin: 0;
-  background-color: #000;
+  opacity: 0.8;
 }
 
 .cbSlideshow li span {
@@ -49,30 +49,30 @@
 }
 
 .cbSlideshow li:nth-child(1) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-1.jpg');
+  background-image: url('imgs/bg-1.jpg');
 }
 
 .cbSlideshow li:nth-child(2) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-2.jpg');
+  background-image: url('imgs/bg-2.jpg');
   animation-delay: 6s;
 }
 
 .cbSlideshow li:nth-child(3) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-3.jpg');
+  background-image: url('imgs/bg-3.jpg');
   animation-delay: 12s;
 }
 
 .cbSlideshow li:nth-child(4) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-4.jpg');
+  background-image: url('imgs/bg-4.jpg');
   animation-delay: 18s;
 }
 
 .cbSlideshow li:nth-child(5) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-5.jpg');
+  background-image: url('imgs/bg-5.jpg');
   animation-delay: 24s;
 }
 
 .cbSlideshow li:nth-child(6) span {
-  background-image: url('http://mariusn.com/themes/reales/images/bg-6.jpg');
+  background-image: url('imgs/bg-6.jpg');
   animation-delay: 32s;
 }
