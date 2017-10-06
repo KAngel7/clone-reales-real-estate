@@ -10,3 +10,10 @@
   font-size: 12px;
   padding-top: 30px;
 }
+
+@media screen and (max-width: 1199px){
+.footerContainer {
+    width: 100%;
+    margin: 0;
+}
+}

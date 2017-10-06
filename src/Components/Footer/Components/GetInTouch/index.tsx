@@ -17,14 +17,18 @@ class GetInTouch extends React.Component<{}, {}> {
             <p>United States</p>
           </li>
           <li>
-            <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
-              <span className="fa fa-facebook" /></a>
-            <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
-              <span className="fa fa-twitter"/></a>
-            <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
-              <span className="fa fa-google-plus"/></a>
-            <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
-              <span className="fa fa-linkedin"/></a>
+          <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
+            <span className="fa fa-facebook"/>
+          </a> 
+          <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
+            <span className="fa fa-twitter"/>
+          </a> 
+          <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
+            <span className="fa fa-google-plus"/>
+          </a> 
+          <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">
+            <span className="fa fa-linkedin"/>
+          </a> 
           </li>
         </ul>
       </div>

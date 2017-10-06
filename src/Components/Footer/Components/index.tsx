@@ -31,7 +31,7 @@ class FooterContainer extends React.Component<{}, {}> {
             <ListComp list={this.listCompany}>Company</ListComp>
             <ListComp list={this.listDiscover}>Discover</ListComp>
             <GetInTouch>Get in Touch</GetInTouch>
-            <Subscribe />
+            <Subscribe>Subscribe to Our Newsletter</Subscribe>
         </div>
         <div className="footerCopyRight">
           Real estate web application<br/> © 2014

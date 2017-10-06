@@ -6,7 +6,17 @@
     font-family: 'open_sanslight';
 }
 
-.subCompTitle .form-group {
-  margin-bottom: 15px;
+.btn-red {
+  background-color: #ea3d36;
+  color: #fff;
 }
 
+.btn-green {
+  background-color: #0eaaa6;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 2px;
+  text-decoration: none;
+}
