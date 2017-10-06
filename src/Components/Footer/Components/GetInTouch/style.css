@@ -1,0 +1,45 @@
+.getInTouch .touchTitle{
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+    color: #e3c8c7;
+    font-family: 'open_sanslight';
+}
+
+.getInTouch .mainList {
+  margin: 0;
+  padding: 0 0 20px 0;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.getInTouch li a {
+  color: #fff;
+}
+
+.getInTouch li {
+  line-height: 13px;
+  padding-bottom: 7px;
+}
+
+.getInTouch li.footer-phone {
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+.getInTouch .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.getInTouch li.footer-address {
+  padding-bottom: 15px;
+}
+
+.getInTouch li.footer-address p {
+  line-height: 13px;
+  margin: 0 0 5px;
+}

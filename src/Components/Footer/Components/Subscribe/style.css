@@ -1,0 +1,12 @@
+.subCompTitle{
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+    color: #e3c8c7;
+    font-family: 'open_sanslight';
+}
+
+.subCompTitle .form-group {
+  margin-bottom: 15px;
+}
+
