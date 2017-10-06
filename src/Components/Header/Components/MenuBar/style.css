@@ -18,11 +18,7 @@
   padding: 0 3px;
 }
 
-.osLight {
-  font-family: 'open_sanslight';
-}
-
-a.home-navHandler {
+a.homeNavHandler {
   display: block;
   position: absolute;
   top: 25px;
@@ -35,41 +31,41 @@ a.home-navHandler {
   transition: all .5s ease-in-out;
 }
 
-.home-nav {
+.homeNav {
   position: absolute;
   right: 20px;
   transition: all .2s ease-in-out;
 }
 
-.home-nav ul {
+.homeNav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   transition: all .2s ease-in-out;
 }
 
-.home-nav ul li {
+.homeNav ul li {
   display: inline-block;
   margin-left: 20px;
   padding-top: 3px;
 }
 
-.home-nav ul li a {
+.homeNav ul li a {
   color: #fff;
 }
-a.home-navHandler.active {
+a.homeNavHandler.active {
   text-shadow: 0 0 10px #fff;
 }
 
 @media screen and (max-width: 767px) {
-  .home-nav ul {
+  .homeNav ul {
     position: absolute;
     top: 0;
     right: -150%;
     padding: 20px;
     z-index: 1100;
   }
-  .home-nav {
+  .homeNav {
     position: absolute;
     top: 76px;
     width: 100%;
@@ -79,10 +75,16 @@ a.home-navHandler.active {
     height: 76px;
     background-color: rgba(0, 0, 0, 0);
   }
-  .home-nav.active {
+  .homeNav.active {
     background-color: rgba(0, 0, 0, 0.50);
   }
-  .home-nav.active ul {
+  .homeNav.active ul {
     right: 10px;
+  }
+  .homeNav ul li {
+    margin-left: 18px;
+  }
+  .homeNav ul li.moreOption {
+    display: none;
   }
 }
