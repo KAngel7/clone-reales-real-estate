@@ -1,18 +1,18 @@
 body {
-    width: 100vw;
-    overflow-x: hidden;
-    margin:0;
-    min-width: 320px;
-    font-family: "Roboto",Arial,Helvetica;
-    line-height: 1;
-    color: #111;
-    background: #fff;
-    overflow-y: scroll;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  min-width: 320px;
+  font-family: "Roboto", Arial, Helvetica;
+  line-height: 1;
+  color: #111;
+  background: #fff;
+  overflow-y: scroll;
 }
 
 html, body {
-    height: 100%;
-    font-size: 14px;
+  height: 100%;
+  font-size: 14px;
 }
 
 *, *:before, *:after {
@@ -30,7 +30,7 @@ h2 {
   padding-bottom: 15px;
 }
 
-a:hover {
+a:hover, a:focus, a:active {
   color: #00ADEF;
   text-decoration: none;
 }
@@ -39,9 +39,6 @@ a {
   transition: all .2s ease-in-out;
   color: #002B49;
   text-decoration: none;
-}
-
-a {
   cursor: pointer;
 }
 
@@ -61,9 +58,63 @@ ul, menu, dir {
 }
 
 option {
-    font-weight: normal;
-    display: block;
-    white-space: pre;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.btn {
+  border-radius: 2px;
+  text-decoration: none;
+}
+.btn-round {
+  border-radius: 50px;
+}
+.btn-o {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn-black {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-o.btn-black {
+  background-color: transparent;
+  color: #333;
+  border-color: #333;
+}
+
+.btn-black:hover, .btn-black:focus, .btn-black:active, .btn-black.active, .open > .dropdown-toggle.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-o.btn-black:hover, .btn-o.btn-black:focus, .btn-o.btn-black:active, .btn-o.btn-black.active, .open > .dropdown-toggle.btn-o.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #0eaaa6;
+  color: #fff;
+}
+
+.btn-o.btn-green {
+  background-color: transparent;
+  color: #0eaaa6;
+  border-color: #0eaaa6;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open > .dropdown-toggle.btn-green {
+  background-color: #068b85;
+  color: #fff;
+}
+
+.btn-o.btn-green:hover, .btn-o.btn-green:focus, .btn-o.btn-green:active, .btn-o.btn-green.active, .open > .dropdown-toggle.btn-o.btn-green {
+  background-color: #0eaaa6;
+  color: #fff;
 }
