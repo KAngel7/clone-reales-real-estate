@@ -1,0 +1,88 @@
+.menuBar {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  height: 75px;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.homeLogo {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+}
+
+.homeLogo > span {
+  padding: 0 3px;
+}
+
+.osLight {
+  font-family: 'open_sanslight';
+}
+
+a.home-navHandler {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  padding: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.home-nav {
+  position: absolute;
+  right: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.home-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transition: all .2s ease-in-out;
+}
+
+.home-nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 3px;
+}
+
+.home-nav ul li a {
+  color: #fff;
+}
+a.home-navHandler.active {
+  text-shadow: 0 0 10px #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .home-nav ul {
+    position: absolute;
+    top: 0;
+    right: -150%;
+    padding: 20px;
+    z-index: 1100;
+  }
+  .home-nav {
+    position: absolute;
+    top: 76px;
+    width: 100%;
+    right: 0;
+    overflow: hidden;
+    z-index: 1100;
+    height: 76px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .home-nav.active {
+    background-color: rgba(0, 0, 0, 0.50);
+  }
+  .home-nav.active ul {
+    right: 10px;
+  }
+}
