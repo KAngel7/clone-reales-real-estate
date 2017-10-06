@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "css.lint.duplicateProperties": "warning",
+  "css.lint.compatibleVendorPrefixes": "warning",
+  "css.lint.ieHack": "warning",
+  "css.lint.unknownVendorSpecificProperties": "warning",
+  "css.lint.float": "warning",
+  "css.lint.idSelector": "warning"
+}

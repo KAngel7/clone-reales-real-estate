@@ -1,0 +1,27 @@
+{
+  "name": "reacttypescriptinit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/node": "^8.0.2",
+    "@types/react": "^15.0.31",
+    "@types/react-dom": "^15.5.1",
+    "@types/react-fa": "^4.1.2",
+    "@types/react-router-dom": "^4.0.5",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts-ts": "2.3.1"
+  },
+  "scripts": {
+    "dev": "react-scripts-ts start",
+    "dev-build": "react-scripts-ts build",
+    "start": "cp src/index.main.tsx src/index.tsx && react-scripts-ts start",
+    "build": "cp src/index.main.tsx src/index.tsx && react-scripts-ts build",
+    "start-admin": "cp src/index.admin.tsx src/index.tsx && react-scripts-ts start",
+    "build-admin": "cp src/index.admin.tsx src/index.tsx && react-scripts-ts build"
+  }
+}
