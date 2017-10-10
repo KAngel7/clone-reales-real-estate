@@ -11,6 +11,9 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
         <div className="headerWrapper">
           <Header />
         </div>
+        {/* <div className="headerWrapper2">
+          <Header2 />
+        </div> */}
         <div className="bodyWrapper container">
           {}
         </div>

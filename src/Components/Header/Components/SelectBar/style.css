@@ -1,0 +1,110 @@
+.search-panel {
+  background-color: rgba(0, 0, 0, 0.50);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 20px 20px 0 20px;
+}
+
+.search-panel form {
+  text-align: center;
+}
+
+.search-panel .form-group {
+  margin: 0 5px 20px 5px;
+  position: relative;
+}
+
+.dropdown-select {
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-select input {
+  position: absolute;
+  left: -9999em;
+}
+
+.dropdown-select > li > a {
+  padding: 7px 20px;
+  display: block;
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-label {
+  float: left;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.checkbox.custom-checkbox span, .radio.custom-radio span {
+  background-color: #fff;
+  border: 1px solid #999;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px;
+  border-radius: 2px;
+  float: left;
+  margin-right: 5px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.checkbox.custom-checkbox label, .radio.custom-radio label, .checkbox.switch label {
+  padding-left: 0;
+}
+
+.checkbox.custom-checkbox input:checked+span, .radio.custom-radio input:checked+span {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.checkbox.custom-checkbox span, .radio.custom-radio span {
+  background-color: #fff;
+  border: 1px solid #999;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px;
+  border-radius: 2px;
+  float: left;
+  margin-right: 5px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.checkbox.custom-checkbox input[type="checkbox"], .radio.custom-radio input[type="radio"], .checkbox.switch input[type="checkbox"] {
+  position: absolute;
+  left: -9999em;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #999;
+}
+
+.btn-green {
+  background-color: #0eaaa6;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .search-panel form {
+    text-align: left;
+  }
+}
