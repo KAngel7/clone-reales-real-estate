@@ -353,3 +353,19 @@ a.mapHandler {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
+
+.headerUserWraper .dropdown-menu {
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+}
+
+.open .notifyMenu, .open .userMenu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+
+a.headerNotify:hover, .headerNotifyWraper.open a.headerNotify {
+  background-color: #f3f3f3;
+  text-decoration: none;
+}
