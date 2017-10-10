@@ -49,6 +49,9 @@
     font-size: 26px;
     line-height: 30px;
   }
+  .homeCaption {
+    top: calc(50vh - 100px);
+  }
 }
 
 @media screen and (max-width: 480px) {
