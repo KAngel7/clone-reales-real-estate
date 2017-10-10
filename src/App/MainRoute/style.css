@@ -3,7 +3,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   min-width: 320px;
-  line-height: 1;
   color: #111;
   background: #fff;
   overflow-y: scroll;
