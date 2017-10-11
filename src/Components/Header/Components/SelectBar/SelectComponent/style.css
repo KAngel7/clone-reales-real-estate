@@ -1,7 +1,0 @@
-.selectComponent{
-  display: inline-block;
-}
-
-.selectComponent .active{
-  display:block;
-}

@@ -3,6 +3,7 @@ import './style.css';
 
 import UserMenu from './UserMenu';
 import NotifyMenu from './NotifyMenu';
+import SearchForm from './SearchForm';
 
 class Header2 extends React.Component<{}, {}> {
 
@@ -16,10 +17,8 @@ class Header2 extends React.Component<{}, {}> {
           </a>
         </div>
         <a href="#" className="navHandler"><span className="bars" /></a>
-        <div className="search">
-          <span className="searchIcon icon-magnifier" />
-          <input type="text" placeholder="Search for houses, apartments..." />
-        </div>
+        <SearchForm />
+
         <UserMenu />
         <NotifyMenu />
         <a href="#" className="mapHandler"><span className="icon-map" /></a>

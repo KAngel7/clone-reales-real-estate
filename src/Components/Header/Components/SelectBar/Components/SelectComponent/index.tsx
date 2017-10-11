@@ -7,7 +7,7 @@ interface SelectComponentProps {
 
 interface SelectComponentState {
   showList: boolean;
-  itemSelected: string;
+  itemSelected: number;
 }
 
 class SelectComponent extends React.Component<SelectComponentProps, SelectComponentState> {
@@ -16,7 +16,7 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
     super(props);
     this.state = {
       showList: false,
-      itemSelected: 'Bedrooms'
+      itemSelected: 0
     };
   }
   componentDidMount() {
@@ -45,15 +45,16 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
 
   doSelect = (ind: number) => {
     this.setState({
-      itemSelected: this.props.listItem[ind]
+      itemSelected: ind
     });
   }
 
   render() {
     return (
-      <div className="selectComponent form-group" ref={(div) => {this.wrapperRef = div; }}>
+      <div className="selectComponent" ref={(div) => {this.wrapperRef = div; }}>
           <a href="#!" data-toggle="dropdown" className="btn btn-white dropdown-toggle" onClick={this.showToggle}>
-            <span className="dropdown-label">{this.state.itemSelected}</span> <span className="caret" />
+            <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span> 
+            <span className="caret" />
           </a>
           <ul  className={`dropdown-menu dropdown-select${this.state.showList ? ' active' : ''}`}>
             {this.props.listItem.map((item, index) => {
