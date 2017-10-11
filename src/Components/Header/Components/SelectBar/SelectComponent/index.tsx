@@ -11,6 +11,7 @@ interface SelectComponentState {
 }
 
 class SelectComponent extends React.Component<SelectComponentProps, SelectComponentState> {
+  wrapperRef: HTMLDivElement | null;
   constructor(props: SelectComponentProps) {
     super(props);
     this.state = {
@@ -18,19 +19,28 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
       itemSelected: 0
     };
   }
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
 
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
+  handleClickOutside = (e: MouseEvent) => {
+    if (
+      this.wrapperRef && 
+      !this.wrapperRef.contains(e.target as Node) &&
+      this.state.showList
+    ) {
+      this.setState({
+        showList: false
+      });
+    }
+  }
   showToggle = () => {
     this.setState({
       showList: !this.state.showList
     });
-    document.addEventListener('click', this.hide);
-  }
-
-  hide = () => {
-    this.setState({
-      showList: false
-    });
-    document.removeEventListener('click', this.hide);
   }
 
   doSelect = (ind: number) => {
@@ -41,12 +51,12 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
 
   render() {
     return (
-      <div className="selectComponent">
+      <div className="selectComponent" ref={(div) => {this.wrapperRef = div; }}>
           <a href="#!" data-toggle="dropdown" className="btn btn-white dropdown-toggle" onClick={this.showToggle}>
             <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span> 
             <span className="caret" />
           </a>
-          <ul  className={`dropdown-menu dropdown-select ${this.state.showList ? 'active' : ''}`}>
+          <ul  className={`dropdown-menu dropdown-select${this.state.showList ? ' active' : ''}`}>
             {this.props.listItem.map((item, index) => {
                 return (
                   <li key={index} onClick={e => { this.doSelect(index); }}>

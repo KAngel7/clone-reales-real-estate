@@ -1,0 +1,53 @@
+.socialButton {
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 30px;
+  padding-left: 40px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  min-width: 2.78572em;
+  line-height: 2.78572;
+  outline-width: 0;
+  padding: 0 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .15s,border-color .15s,color .15s;
+  user-select: none;
+  display: block;
+  width: 100%;
+}
+.socialButtons {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+.buttonGoogle {
+  background-color: #dd4b39;
+  background-image: url('imgs/google_button_icon.svg');
+}
+.buttonGoogle:hover {
+  background-color: #ee503d;
+}
+.buttonFacebook {
+  background-color: #3b5998;
+  background-image: url('imgs/facebook_button_icon.svg');
+}
+.buttonFacebook:hover {
+  background-color: #4562a1;
+}
+
+.socialButtons .or {
+  margin: 15px 0;
+  color: #333f48;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}

@@ -5010,19 +5010,11 @@ button.close {
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform .3s ease-out;
-  -o-transition: -o-transform .3s ease-out;
   transition: transform .3s ease-out;
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
 }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
@@ -5116,13 +5108,23 @@ button.close {
   overflow: scroll;
 }
 
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 30px auto;
+    margin: 80px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .modal-md {
+    width: 400px;
+  }
+  .modal-content {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
   }
   .modal-sm {
@@ -5146,7 +5148,6 @@ button.close {
   font-weight: normal;
   line-height: 1.42857143;
   text-align: left;
-  text-align: start;
   text-decoration: none;
   text-shadow: none;
   text-transform: none;

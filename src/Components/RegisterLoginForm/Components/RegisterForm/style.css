@@ -1,0 +1,7 @@
+.registerForm {
+  pointer-events: none;
+  display: block;
+}
+.registerForm.in {
+  pointer-events: initial;
+}
