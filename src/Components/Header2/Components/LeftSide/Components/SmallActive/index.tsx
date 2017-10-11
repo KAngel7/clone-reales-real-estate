@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './style.css';
 
+import { Icon } from 'react-fa';
+
 class SmallActive extends React.Component<{}, {}> {
 
   render() {
@@ -13,22 +15,22 @@ class SmallActive extends React.Component<{}, {}> {
       </div>
       <ul>
         <li><a href="explore.html">
-          <span className="navIcon icon-compass" />
+          <Icon className="navIcon icon-compass" name="compass" />
           <span className="navLabel">Explore</span>
         </a>
         </li>
         <li><a href="single.html">
-          <span className="navIcon icon-home" />
+          <Icon className="navIcon icon-home" name="home" />
           <span className="navLabel">Single</span>
         </a>
         </li>
         <li><a href="add.html">
-          <span className="navIcon icon-plus" />
+          <Icon className="navIcon icon-plus" name="plus-circle" />
           <span className="navLabel">New</span>
         </a>
         </li>
         <li className="hasSub">
-          <a href="#"><span className="navIcon icon-drop" />
+          <a href="#"><Icon className="navIcon icon-drop" name="tint" />
             <span className="navLabel">Colors</span
             ><span className="fa fa-angle-left arrowRight" />
             <span className="badge bg-yellow">5</span>
@@ -56,39 +58,7 @@ class SmallActive extends React.Component<{}, {}> {
             </a>
             </li>
           </ul>
-        </li>
-        <li className="hasSub">
-          <a href="#"><span className="navIcon icon-layers" />
-            <span className="navLabel">Elements</span>
-            <span className="fa fa-angle-left arrowRight" />
-          </a>
-          <ul>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="icons.html">Icons <span className="badge pull-right bg-yellow">841</span></a></li>
-            <li><a href="grid.html">Grid</a></li>
-            <li><a href="widgets.html">Widgets</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="lists.html">Lists</a></li>
-            <li><a href="tables.html">Tables</a></li>
-            <li><a href="form.html">Form</a></li>
-          </ul>
-        </li>
-        <li className="hasSub">
-          <a href="#">
-            <span className="navIcon icon-link" />
-            <span className="navLabel">Pages</span>
-            <span className="fa fa-angle-left arrowRight" />
-          </a>
-          <ul>
-            <li><a href="signin.html">Sign In</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="index.html">Homepage Slideshow</a></li>
-            <li><a href="index-map.html">Homepage Map</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="blog-post.html">Blog Post</a></li>
-          </ul>
-        </li>
+        </li>       
       </ul>
     </nav>
     );

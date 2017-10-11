@@ -379,6 +379,12 @@ a.headerNotify:hover, .headerNotifyWraper.open a.headerNotify {
   text-decoration: none;
 }
 
+a.navHandler:hover {
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
 @media screen and (max-width: 767px) {
   .userMenu {
     width: 100% !important;
