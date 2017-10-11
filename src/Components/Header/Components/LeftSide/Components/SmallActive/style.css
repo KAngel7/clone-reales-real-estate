@@ -1,0 +1,107 @@
+.leftNav .search {
+  display: none;
+  float: left;
+}
+
+.searchIcon {
+  font-size: 13px;
+  float: left;
+  color: #999;
+  margin-left: 23px;
+  display: block;
+  padding-top: 23px;
+  transition: all .2s ease-in-out;
+}
+
+.search input {
+  background-color: #fff;
+  color: #3a3a3a;
+  border: 0 none;
+  font-size: 13px;
+  margin: 19px 0 0 5px;
+  width: 210px;
+  -webkit-appearance: none;
+}
+
+.leftNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftNav ul li {
+  position: relative;
+  width: 70px;
+}
+
+.leftNav ul li a {
+  display: block;
+  font-size: 16px;
+  color: #adc8c7;
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.leftNav ul li a span.navIcon {
+  top: 22px;
+}
+
+.leftNav ul li a span {
+  position: absolute;
+  width: 70px;
+  display: block;
+  text-align: center;
+  z-index: 110;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.leftNav ul li a span.navLabel {
+  font-size: 12px;
+  bottom: 10px;
+  left: -70px;
+}
+
+.leftNav ul li ul {
+  background-color: #132120;
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  left: 50px;
+  z-index: 1100;
+  transition: all .2s ease-in-out;
+}
+
+.leftNav ul ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftNav ul li ul li {
+  width: 100%;
+  position: relative;
+}
+
+.leftNav ul li ul li a {
+  width: 100%;
+  font-size: 12px;
+  height: auto;
+  padding: 7px 20px;
+}
+
+.leftNav ul li ul li a span.icon-right {
+  font-size: 11px;
+  font-weight: normal;
+  margin-right: 0;
+  position: relative;
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
