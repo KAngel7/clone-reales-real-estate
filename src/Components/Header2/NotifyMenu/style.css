@@ -1,5 +1,10 @@
 .notifyMenu{
   width: 300px;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -20px;
+  transition: all .2s ease-in-out;
 }
 
 .pulsate{

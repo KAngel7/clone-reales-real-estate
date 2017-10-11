@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './style.css';
 
+import { Icon } from 'react-fa';
+
 import UserMenu from './UserMenu';
 import NotifyMenu from './NotifyMenu';
 import SearchForm from './SearchForm';
@@ -12,16 +14,16 @@ class Header2 extends React.Component<{}, {}> {
       <div className="header2">
         <div className="logo">
           <a href="index.html">
-            <span className="home marker" />
+            <Icon className="fa fa-home marker" name="home" />
             <span className="logoText">reales</span>
           </a>
         </div>
-        <a href="#" className="navHandler"><span className="bars" /></a>
+        <a href="#" className="navHandler"><Icon className="fa fa-bars" name="bars" /></a>
         <SearchForm />
 
         <UserMenu />
         <NotifyMenu />
-        <a href="#" className="mapHandler"><span className="icon-map" /></a>
+        <a href="#" className="mapHandler"><Icon className="icon-map" name="map-o" /></a>
         <div className="clearfix" />
       </div>
     );

@@ -35,7 +35,7 @@ class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
     return (
       <div className={`headerUserWraper ${this.state.showMenu ? 'open' : ''}`} onClick={this.showUserMenu}>
         <a href="#" className="userHandler dropdown-toggle" data-toggle="dropdown">
-          <span className="icon-user" /><span className="counter">5</span></a>
+          <Icon className="icon-user" name="user-o" /><span className="counter">5</span></a>
         <a href="#" className="headerUser dropdown-toggle" data-toggle="dropdown">
           <img className="avatar headerAvatar pull-left" src="http://mariusn.com/themes/reales/images/avatar-1.png" />
           <div className="userTop pull-left">
