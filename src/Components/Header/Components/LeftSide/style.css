@@ -1,0 +1,13 @@
+#leftSide {
+  background-color: #213837;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  z-index: 100;
+}
+
+#leftSide.expanded {
+  width: 200px;
+}
