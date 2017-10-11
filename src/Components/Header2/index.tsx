@@ -18,12 +18,12 @@ class Header2 extends React.Component<{}, {}> {
             <span className="logoText">reales</span>
           </a>
         </div>
-        <a href="#" className="navHandler"><Icon className="fa fa-bars" name="bars" /></a>
+        <a href="#" className="navHandler"><Icon  name="bars" /></a>
         <SearchForm />
 
         <UserMenu />
         <NotifyMenu />
-        <a href="#" className="mapHandler"><Icon className="icon-map" name="map-o" /></a>
+        <a href="#" className="mapHandler"><Icon name="map-o" /></a>
         <div className="clearfix" />
       </div>
     );

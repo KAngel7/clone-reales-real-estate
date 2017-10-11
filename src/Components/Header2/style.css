@@ -86,7 +86,7 @@ a.navHandler {
   color: #3a3a3a;
 }
 
-.icon-magnifier{
+.icon-magnifier {
   font-family: 'Simple-Line-Icons';
   speak: none;
   font-style: normal;
@@ -126,7 +126,7 @@ a.userHandler {
   text-decoration: none;
 }
 
-.icon-user{
+.icon-user {
   font-family: 'Simple-Line-Icons';
   speak: none;
   font-style: normal;
@@ -153,7 +153,6 @@ a.userHandler .counter {
   text-decoration: none;
 }
 
-
 a.headerUser:hover, .headerUserWraper.open a.headerUser {
   background-color: #f3f3f3;
   color: #3a3a3a;
@@ -170,6 +169,7 @@ a.headerUser {
 .headerAvatar {
   margin-top: 10px;
 }
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -234,10 +234,10 @@ a.headerUser {
 }
 
 .headerNotifyWraper {
-    position: relative;
-    float: right;
-    width: 60px;
-    height: 60px;
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 60px;
 }
 
 a.headerNotify {
@@ -279,15 +279,15 @@ a.headerNotify {
 }
 
 .notifyHeader {
-    padding: 10px;
-    border-bottom: 1px solid #dfdfdf;
+  padding: 10px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .notifyHeader span {
-    font-size: 13px;
-    line-height: 15px;
-    display: block;
-    float: left;
+  font-size: 13px;
+  line-height: 15px;
+  display: block;
+  float: left;
 }
 
 a.notifySettings {
@@ -312,6 +312,7 @@ a.notifySettings {
 .border-grey {
   border: 3px solid #ababab;
 }
+
 .pulse {
   border-radius: 50%;
   height: 40px;
@@ -351,7 +352,7 @@ a.mapHandler {
   text-decoration: none;
 }
 
-.icon-map{
+.icon-map {
   font-family: 'Simple-Line-Icons';
   speak: none;
   font-style: normal;
@@ -378,94 +379,81 @@ a.headerNotify:hover, .headerNotifyWraper.open a.headerNotify {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px){
-.header2 {
+@media screen and (max-width: 767px) {
+  .userMenu {
+    width: 100% !important;
+  }
+  .header2 {
     background-color: #0eaaa6;
     height: 50px;
-}
-
-.logo, .logo.expanded {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 80px;
-  height: 50px;
-  margin-left: -40px;
-}
-
-.logo a, .logo.expanded a {
-  width: 70px;
-  height: 50px;
-}
-
-.logo a span.marker, .logo.expanded a span.marker {
-  left: 0;
-  top: 10px;
-  transition: none;
-}
-
-.logo a span.logoText, .logo.expanded a span.logoText {
-  top: 14px;
-  left: 34px;
-}
-
-a.navHandler {
-  font-size: 24px;
-  padding-top: 8px;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-}
-
-.search {
-  display: none;
-}
-
-.searchIcon {
-  font-size: 16px;
-  color: #adc8c7;
-  margin-left: 0;
-  padding-top: 0;
-  line-height: 42px;
-}
-
-.search input {
-  background-color: #132120;
-  color: #fff;
-  border: 0 none;
-  font-size: 12px;
-  margin: 12px 0 0 10px;
-  width: 88%;
-  padding: 0;
-}
-
-.headerUserWraper {
-  height: 50px;
-}
-
-a.userHandler {
-  display: block;
-}
-
-a.headerUser {
-  display: none;
-}
-
-.headerUserWraper .dropdown-menu {
-  border-radius: 0;
-  border: 0 none;
-}
-
-.mobAvatar {
-  display: block;
-}
-
-.headerNotifyWraper {
-  display: none;
-}
-
-a.mapHandler {
-  display: block;
-}
-
+  }
+  .logo, .logo.expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 50px;
+    margin-left: -40px;
+  }
+  .logo a, .logo.expanded a {
+    width: 70px;
+    height: 50px;
+  }
+  .logo a span.marker, .logo.expanded a span.marker {
+    left: 0;
+    top: 10px;
+    transition: none;
+  }
+  .logo a span.logoText, .logo.expanded a span.logoText {
+    top: 14px;
+    left: 34px;
+  }
+  a.navHandler {
+    font-size: 24px;
+    padding-top: 8px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+  }
+  .search {
+    display: none;
+  }
+  .searchIcon {
+    font-size: 16px;
+    color: #adc8c7;
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 42px;
+  }
+  .search input {
+    background-color: #132120;
+    color: #fff;
+    border: 0 none;
+    font-size: 12px;
+    margin: 12px 0 0 10px;
+    width: 88%;
+    padding: 0;
+  }
+  .headerUserWraper {
+    height: 50px;
+  }
+  a.userHandler {
+    display: block;
+  }
+  a.headerUser {
+    display: none;
+  }
+  .headerUserWraper .dropdown-menu {
+    border-radius: 0;
+    border: 0 none;
+  }
+  .mobAvatar {
+    display: block;
+  }
+  .headerNotifyWraper {
+    display: none;
+  }
+  a.mapHandler {
+    display: block;
+  }
 }

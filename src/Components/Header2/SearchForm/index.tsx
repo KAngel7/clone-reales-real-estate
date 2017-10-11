@@ -7,7 +7,7 @@ class SearchForm extends React.Component<{}, {}> {
   render() {
     return (
       <div className="search">
-        <Icon className="searchIcon icon-magnifier" name="search" />
+        <Icon  name="search" />
         <input type="text" placeholder="Search for houses, apartments..." />
       </div>
     );
