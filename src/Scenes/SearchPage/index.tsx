@@ -5,6 +5,7 @@ import Header2 from '../../Components/Header2';
 import MyWallet from './Components/MyWallet';
 
 class SearchPage extends React.Component<RouteComponentProps<any>, {}> {
+
   render() {
     return (
       <div className="searchPage">

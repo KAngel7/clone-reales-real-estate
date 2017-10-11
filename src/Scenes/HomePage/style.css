@@ -1,3 +1,6 @@
+body {
+  overflow-y: auto;
+}
 .homePage .bodyWrapper {
   height: 500px;
 }
