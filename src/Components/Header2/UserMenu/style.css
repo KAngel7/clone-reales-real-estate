@@ -1,0 +1,25 @@
+.userMenu {
+  width: 190px;
+}
+
+.bg-red {
+  color: #fff;
+  background-color: #ea3d36;
+}
+
+.userMenu ul > li > a > span.badge {
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 0;
+}
+
+.userMenu ul > li > a:hover, .userMenu ul > li > a:focus {
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #3a3a3a;
+  outline: 0 none !important;
+}
+
+.headerUserName{
+  margin-right:5px;
+}

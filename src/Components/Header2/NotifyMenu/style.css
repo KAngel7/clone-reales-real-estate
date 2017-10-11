@@ -1,0 +1,57 @@
+.notifyMenu{
+  width: 300px;
+}
+
+.pulsate{
+  animation: pulsate 0.5s ease-out;
+}
+
+.notifyList > li > a:hover {
+  background-color: #f3f3f3;
+}
+
+.notifyRound-red {
+  border: 1px solid #ea3d36;
+  color: #ea3d36;
+}
+
+.border-red {
+  border: 3px solid #ea3d36;
+}
+.notifyRound {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.notifyAll {
+  padding: 10px;
+  border-top: 1px solid #dfdfdf;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0eaaa6 !important;
+}
+
+.notifyAll:hover {
+  color: #0eaaa6;
+  text-decoration: underline;
+}
+
+@keyframes pulsate {
+  0% {
+      transform: scale(1.0, 1.0);
+      opacity: 0.0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1.4, 1.4);
+      opacity: 0.0;
+  }
+}
