@@ -5,7 +5,7 @@ import { Icon } from 'react-fa';
 
 import SelectComponent from './Components/SelectComponent';
 
-interface SelectBarProps {
+interface SearchBarProps {
 
 }
 
@@ -13,7 +13,7 @@ interface SelectBarState {
   isAdvance: boolean;
 }
 
-class SelectBar extends React.Component<SelectBarProps, SelectBarState> {
+class SearchBar extends React.Component<SearchBarProps, SelectBarState> {
   listBed = [
     'Bedrooms',
     '1',
@@ -29,7 +29,7 @@ class SelectBar extends React.Component<SelectBarProps, SelectBarState> {
     '4'
   ];
 
-  constructor(props: SelectBarProps) {
+  constructor(props: SearchBarProps) {
     super(props);
     this.state = {
       isAdvance: false
@@ -79,7 +79,7 @@ class SelectBar extends React.Component<SelectBarProps, SelectBarState> {
             </div>
           </div>
           <div className="form-group">
-            <a href="explore.html" className="btn btn-green isThemeBtn">Search</a>
+            <a href="/search" className="btn btn-green isThemeBtn">Search</a>
             <a
               href="#" 
               className={`btn btn-o btn-white pull-right visible-xs${this.state.isAdvance ? ' advBtnActive' : ''}`}
@@ -95,4 +95,4 @@ class SelectBar extends React.Component<SelectBarProps, SelectBarState> {
   }
 }
 
-export default SelectBar;
+export default SearchBar;
