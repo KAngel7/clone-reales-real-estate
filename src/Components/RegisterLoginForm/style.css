@@ -10,3 +10,49 @@
 .RLForm .modal-backdrop {
   transition: opacity 0.3s cubic-bezier(0, 0.45, 1, 1);
 }
+
+.btn-facebook {
+  background-color: #43609c;
+  color: #fff;
+}
+
+.btn-o.btn-facebook {
+  background-color: transparent;
+  color: #43609c;
+  border-color: #43609c;
+}
+
+.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active, .open > .dropdown-toggle.btn-facebook {
+  background-color: #395285;
+  color: #fff;
+}
+
+.btn-o.btn-facebook:hover, .btn-o.btn-facebook:focus, .btn-o.btn-facebook:active, .btn-o.btn-facebook.active, .open > .dropdown-toggle.btn-o.btn-facebook {
+  background-color: #43609c;
+}
+
+.btn-google {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.btn-o.btn-google {
+  background-color: transparent;
+  color: #dd4b39;
+  border-color: #dd4b39;
+}
+
+.btn-google:hover, .btn-google:focus, .btn-google:active, .btn-google.active, .open > .dropdown-toggle.btn-google {
+  background-color: #c44433;
+  color: #fff;
+}
+
+.btn-o.btn-google:hover, .btn-o.btn-google:focus, .btn-o.btn-google:active, .btn-o.btn-google.active, .open > .dropdown-toggle.btn-o.btn-google {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.signOr {
+  padding-bottom: 10px;
+  text-align: center;
+}

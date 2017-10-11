@@ -21,6 +21,8 @@
   border-radius: 2px;
   border: 1px solid #dfdfdf;
   transition: all .2s ease-in-out;
+  bottom: calc(100% + 5px);
+  top: inherit;
 }
 
 .dropdown-select input {
@@ -91,16 +93,6 @@
 .btn-white {
   background-color: #fff;
   color: #999;
-}
-
-.btn-green {
-  background-color: #0eaaa6;
-  color: #fff;
-}
-
-.btn {
-  border-radius: 2px;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {

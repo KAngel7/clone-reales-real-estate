@@ -3,64 +3,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   min-width: 320px;
-  color: #111;
   background: #fff;
   overflow-y: scroll;
 }
 
 html, body {
   height: 100%;
-  font-family: 'open_sansregular', sans-serif, Arial;
   font-size: 13px;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-h2 {
-  font-size: 1.4rem;
-  line-height: 1.2em;
-  color: #002B49;
-  padding-bottom: 15px;
-}
-
-a:hover, a:focus, a:active {
-  color: #00ADEF;
-  text-decoration: none;
-}
-
-a {
-  transition: all .2s ease-in-out;
-  color: #002B49;
-  text-decoration: none;
-  cursor: pointer;
-} */
-
-p {
-  margin: 0 0 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-}
-
-ul, menu, dir {
-  -webkit-padding-start: 0px;
-}
-
-option {
-  font-weight: normal;
-  display: block;
-  white-space: pre;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
 }
 
 .btn {
@@ -117,36 +66,18 @@ option {
   color: #fff;
 }
 
-form {
-  display: block;
-  margin-top: 0em;
+.text-green {
+  color: #0eaaa6;
+}
+a.text-green:hover {
+  color: #068b85;
 }
 
-input {
-  background-color: white;
-  user-select: text;
-  cursor: auto;
-  padding: 1px;
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
+.help-block {
+  font-size: 11px;
+  font-style: italic;
 }
 
-input, textarea, select, button {
-  text-rendering: auto;
-  color: initial;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  margin: 0em;
-  font: 13.3333px Arial;
-}
-
-input, textarea, select, button, meter, progress {
-  -webkit-writing-mode: horizontal-tb;
+.align-right {
+  text-align: right !important;
 }

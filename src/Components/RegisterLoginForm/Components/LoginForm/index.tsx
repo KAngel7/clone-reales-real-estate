@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-// import SocialButtons from '../SocialButtons';
+import { Icon } from 'react-fa';
 
 interface LoginFormProps {
   active: boolean;
@@ -20,7 +20,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
   }
   render() {
     return (
-      <div 
+      <div
         className={'loginForm modal fade' + (this.props.active ? ' in' : '')}
       >
         <div className="modal-dialog modal-sm">
@@ -32,12 +32,18 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
               <form role="form">
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    {}
+                    <a href="explore.html" className="btn btn-lg btn-facebook">
+                      <Icon name="facebook" className="pull-left" />
+                      <span>Sign In with Facebook</span>
+                    </a>
                   </div>
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    {}
+                    <a href="explore.html" className="btn btn-lg btn-google">
+                      <Icon name="google" className="pull-left" />
+                      <span>Sign In with Google</span>
+                  </a>
                   </div>
                 </div>
                 <div className="signOr">OR</div>
@@ -51,24 +57,33 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                   <div className="row">
                     <div className="col-xs-6">
                       <div className="checkbox custom-checkbox">
-                        <label><input type="checkbox" />Remember me</label></div>
+                        <label>
+                          <input type="checkbox" />
+                          <Icon name="check" />
+                          Remember me
+                        </label>
+                      </div>
                     </div>
                     <div className="col-xs-6 align-right">
                       <p className="help-block">
-                        <a href="#" className="text-green isThemeText text-red">Forgot password?</a>
+                        <a href="#" className="text-green isThemeText text-red">
+                          Forgot password?
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="explore.html" className="btn btn-lg btn-green isThemeBtn btn-red">Sign In</a>
+                    <a href="explore.html" className="btn btn-lg btn-green isThemeBtn btn-red">
+                      Sign In
+                    </a>
                   </div>
                 </div>
                 <p className="help-block">
-                  Don't have an account?
-                  <a 
-                    href="#" 
+                  <span>Don't have an account? </span>
+                  <a
+                    href="#"
                     className="modal-su text-green isThemeText text-red"
                     onClick={this.props.openRegisterForm}
                   >

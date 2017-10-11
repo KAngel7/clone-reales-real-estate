@@ -50,8 +50,8 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
             <li className="moreOption"><a href="#">Buy</a></li>
             <li className="moreOption"><a href="#">Rent</a></li>
             <li className="moreOption"><a href="#">Find agent</a></li>
-            <li><a onClick={() => this.updateFormStatus('register')}>Sign Up</a></li>
-            <li><a onClick={() => this.updateFormStatus('login')}>Sign In</a></li>
+            <li><a href="#" onClick={() => this.updateFormStatus('register')}>Sign Up</a></li>
+            <li><a href="#" onClick={() => this.updateFormStatus('login')}>Sign In</a></li>
             <li><a className="btn btn-green">List a Property</a></li>
           </ul>
         </div>
