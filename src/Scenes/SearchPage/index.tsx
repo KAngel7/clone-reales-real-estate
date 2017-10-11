@@ -3,8 +3,8 @@ import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
 import Header2 from '../../Components/Header2';
 import MyWallet from './Components/MyWallet';
-import SmallActive from '../../Components/Header2/Components/LeftSide/Components/SmallActive';
-import ExpandActive from '../../Components/Header2/Components/LeftSide/Components/ExpandActive';
+import SmallActive from '../../Components/LeftSide/Components/SmallActive';
+import ExpandActive from '../../Components/LeftSide/Components/ExpandActive';
 
 interface SearchPageState {
   isExpand: boolean;
