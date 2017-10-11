@@ -1,0 +1,7 @@
+.loginForm {
+  pointer-events: none;
+  display: block;
+}
+.loginForm.in {
+  pointer-events: initial;
+}

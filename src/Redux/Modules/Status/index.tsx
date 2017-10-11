@@ -2,7 +2,7 @@
 /************* Actions *************/
 /***********************************/
 
-enum StatusActionType {
+const enum StatusActionType {
   REHYDRATE = 'persist/REHYDRATE'
 }
 

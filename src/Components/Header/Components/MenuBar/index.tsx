@@ -1,14 +1,20 @@
 import * as React from 'react';
 import './style.css';
 import { Icon } from 'react-fa';
+import RLForm from '../../../RegisterLoginForm';
+
+interface MenuBarProps {
+
+}
 
 interface MenuBarState {
   isHandlerActive: boolean;
+  rlFormStatus?: 'login' | 'register'; 
 }
 
-class MenuBar extends React.Component<{}, MenuBarState> {
-  constructor() {
-    super();
+class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
+  constructor(props: MenuBarProps) {
+    super(props);
     this.state = {
       isHandlerActive: false
     };
@@ -16,6 +22,11 @@ class MenuBar extends React.Component<{}, MenuBarState> {
   toggleHandler = () => {
     this.setState({
       isHandlerActive: !this.state.isHandlerActive
+    });
+  }
+  updateFormStatus = (status?: 'login' | 'register') => {
+    this.setState({
+      rlFormStatus: status
     });
   }
   render() {
@@ -39,11 +50,17 @@ class MenuBar extends React.Component<{}, MenuBarState> {
             <li className="moreOption"><a href="#">Buy</a></li>
             <li className="moreOption"><a href="#">Rent</a></li>
             <li className="moreOption"><a href="#">Find agent</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Sign In</a></li>
+            <li><a onClick={() => this.updateFormStatus('register')}>Sign Up</a></li>
+            <li><a onClick={() => this.updateFormStatus('login')}>Sign In</a></li>
             <li><a className="btn btn-green">List a Property</a></li>
           </ul>
         </div>
+        <RLForm 
+          type={this.state.rlFormStatus} 
+          openRegisterForm={() => this.updateFormStatus('register')} 
+          openLoginForm={() => this.updateFormStatus('login')}
+          close={() => this.updateFormStatus()}
+        />
       </div>
     );
   }

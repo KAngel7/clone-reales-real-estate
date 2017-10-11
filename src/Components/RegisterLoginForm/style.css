@@ -1,0 +1,12 @@
+.RLForm {
+  transition: visibility 0.15s linear;
+  visibility: hidden;
+}
+
+.RLForm.modal-open {
+  visibility: visible;
+}
+
+.RLForm .modal-backdrop {
+  transition: opacity 0.3s cubic-bezier(0, 0.45, 1, 1);
+}
