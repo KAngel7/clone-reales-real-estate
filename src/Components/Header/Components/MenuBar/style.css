@@ -70,7 +70,7 @@ a.homeNavHandler.active {
     width: 100%;
     right: 0;
     overflow: hidden;
-    z-index: 1100;
+    z-index: 150;
     height: 76px;
     background-color: rgba(0, 0, 0, 0);
   }

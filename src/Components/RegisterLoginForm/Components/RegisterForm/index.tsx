@@ -21,7 +21,7 @@ class RegisterForm extends React.Component<RegisterFormProps, RegisterFormState>
   render() {
     return (
       <div
-        className={'registerForm modal fade' + (this.props.active ? ' in' : '')}
+        className={'registerForm slimScroll modal fade' + (this.props.active ? ' in' : '')}
       >
         <div className="modal-dialog modal-sm">
           <div className="modal-content">

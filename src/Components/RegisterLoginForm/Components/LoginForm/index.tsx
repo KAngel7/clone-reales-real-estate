@@ -21,7 +21,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
   render() {
     return (
       <div
-        className={'loginForm modal fade' + (this.props.active ? ' in' : '')}
+        className={'loginForm modal slimScroll fade' + (this.props.active ? ' in' : '')}
       >
         <div className="modal-dialog modal-sm">
           <div className="modal-content">

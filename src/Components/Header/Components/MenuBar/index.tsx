@@ -24,6 +24,11 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
       isHandlerActive: !this.state.isHandlerActive
     });
   }
+  // hideHandler = () => {
+  //   this.setState({
+  //     isHandlerActive: false
+  //   });
+  // }
   updateFormStatus = (status?: 'login' | 'register') => {
     this.setState({
       rlFormStatus: status
