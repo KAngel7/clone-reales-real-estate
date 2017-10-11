@@ -1,3 +1,18 @@
-.bodyWrapper {
-  height: 500px;
+body {
+  overflow: hidden;
+}
+.searchPage .headerWrapper {
+  height: 60px;
+}
+
+.searchPage .bodyWrapper {
+  height: calc(100vh - 60px);
+  position: relative;
+  border: 1px solid red;
+}
+
+.walletWrapper {
+  margin-left: 70px;
+  border: 1px solid green;
+  height: 100%;
 }

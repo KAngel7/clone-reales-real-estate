@@ -46,7 +46,11 @@ class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
         </a>
         <div className="dropdown-menu pull-right userMenu" role="menu">
           <div className="mobAvatar">
-            <img className="avatar mobAvatarImg" src="http://mariusn.com/themes/reales/images/avatar-1.png" alt="avatar" />
+            <img 
+              className="avatar mobAvatarImg" 
+              src="http://mariusn.com/themes/reales/images/avatar-1.png" 
+              alt="avatar" 
+            />
             <div className="mobAvatarName">John Smith</div>
           </div>
           <ul>

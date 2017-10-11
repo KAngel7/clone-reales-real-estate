@@ -2,8 +2,7 @@ import * as React from 'react';
 import './style.css';
 import MenuBar from './Components/MenuBar';
 import SlideShow from './Components/SlideShow';
-import QuickSearch from './Components/QuickSearch';
-import SelectBar from './Components/SelectBar';
+import SearchBar from './Components/SearchBar';
 
 class Header extends React.Component<{}, {}> {
 
@@ -21,11 +20,8 @@ class Header extends React.Component<{}, {}> {
           <div className="homeSubtitle">With Reales - Real Estate HTML Template</div>
           <a href="#" className="btn btn-black">Learn More</a>
         </div>
-        <div className="quickSearchWrapper">
-          <QuickSearch />
-        </div>
         <div className="selectBarWrapper">
-          <SelectBar />
+          <SearchBar />
         </div>
       </div>
     );
