@@ -1,6 +1,3 @@
-body {
-  overflow: hidden;
-}
 .searchPage .headerWrapper {
   height: 60px;
 }
@@ -8,12 +5,10 @@ body {
 .searchPage .bodyWrapper {
   height: calc(100vh - 60px);
   position: relative;
-  border: 1px solid red;
 }
 
 .walletWrapper {
   margin-left: 70px;
-  border: 1px solid green;
   height: 100%;
 }
 
@@ -31,7 +26,6 @@ body {
 #leftSide.expanded {
   width: 200px;
 }
-
 
 .leftNav .c-red {
   color: #ea3d36;
@@ -53,50 +47,55 @@ body {
   color: #9b156e;
 }
 
-@media screen and (max-width: 767px){
-#leftSide.expanded {
+@media screen and (max-width: 767px) {
+  .searchPage .headerWrapper {
+    height: 50px;
+  }
+  .searchPage .bodyWrapper {
+    height: calc(100vh - 50px);
+  }
+  .walletWrapper {
+    margin-left: 0px;
+  }
+  #leftSide.expanded {
     width: 87%;
     opacity: 1;
     visibility: visible;
     margin-left: 0;
-}
-#leftSide {
-  top: 50px;
-  visibility: hidden;
-  opacity: 0;
-  margin-left: -87%;
-  transition: all .2s ease-in-out;
-}
-
-.leftNav .search {
-  background-color: #132120;
-  display: block;
-  float: none;
-  padding: 10px 20px 10px 20px;
-}
-
-#leftSide .searchIcon {
-  font-size: 16px;
-  color: #adc8c7;
-  margin-left: 0;
-  padding-top: 0;
-  line-height: 42px;
-}
-#leftSide .search input {
-  background-color: #132120;
-  color: #fff;
-  border: 0 none;
-  font-size: 12px;
-  margin: 12px 0 0 10px;
-  width: 88%;
-  padding: 0;
-}
-
-.expanded .leftNav ul li {
-  width: 100%;
-}
-
-.expanded .leftNav ul li a {
-  width: 100%;
-}
+  }
+  #leftSide {
+    top: 50px;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -87%;
+    transition: all .2s ease-in-out;
+  }
+  .leftNav .search {
+    background-color: #132120;
+    display: block;
+    float: none;
+    padding: 10px 20px 10px 20px;
+  }
+  #leftSide .searchIcon {
+    font-size: 16px;
+    color: #adc8c7;
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 42px;
+  }
+  #leftSide .search input {
+    background-color: #132120;
+    color: #fff;
+    border: 0 none;
+    font-size: 12px;
+    margin: 12px 0 0 10px;
+    width: 88%;
+    padding: 0;
+  }
+  .expanded .leftNav ul li {
+    width: 100%;
+  }
+  .expanded .leftNav ul li a {
+    width: 100%;
+  }
 }

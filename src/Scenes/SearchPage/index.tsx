@@ -1,23 +1,18 @@
 import * as React from 'react';
 import './style.css';
-// import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 import Header2 from '../../Components/Header2';
 import MyWallet from './Components/MyWallet';
-
 import SmallActive from '../../Components/Header2/Components/LeftSide/Components/SmallActive';
 import ExpandActive from '../../Components/Header2/Components/LeftSide/Components/ExpandActive';
-
-interface SearchPageProps {
-
-}
 
 interface SearchPageState {
   isExpand: boolean;
 }
 
-class SearchPage extends React.Component<SearchPageProps, SearchPageState> {
-  constructor(props: SearchPageProps) {
-    super(props);
+class SearchPage extends React.Component<RouteComponentProps<any>, SearchPageState> {
+  constructor() {
+    super();
     this.state = {
       isExpand: false
     };
@@ -31,7 +26,7 @@ class SearchPage extends React.Component<SearchPageProps, SearchPageState> {
     return (
       <div className="searchPage">
         <div className="headerWrapper">
-          <Header2 clickToggle={this.doToggle}/>
+          <Header2 clickToggle={this.doToggle} />
         </div>
         <div className="bodyWrapper">
           <div id="leftSide" className={`${this.state.isExpand ? 'expanded' : ''}`}>

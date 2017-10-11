@@ -1,0 +1,73 @@
+.balanceHeader {
+  width: 100%;
+  height: 220px;
+  background-color: #0eaaa6;
+  color: white;
+  position: relative;
+}
+
+.bnContainer {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.balanceNumber {
+  font-size: 40px;
+  font-weight: 700;
+  height: 100%;
+}
+
+.balanceType {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.balanceType li {
+  cursor: pointer;
+  color: #ddd;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 3px;
+  border: 1px solid #999;
+}
+
+.balanceType li.active, .balanceType li:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.balanceActions {
+  margin: 0 auto;
+  width: 318px;
+  position: relative;
+}
+
+.balanceHeader ul.features {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  border: 1px solid #e8e8e8;
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
+.balanceHeader ul.features li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 15px 0;
+  border-right: 1px solid #e8e8e8;
+}
+
+.balanceHeader ul.features li:last-child {
+  border-right: 0 none;
+}
+
+@media screen and (max-width: 767px) {
+  .bnContainer {
+    padding-top: 50px;
+  }
+}

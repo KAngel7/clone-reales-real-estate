@@ -15,9 +15,11 @@ html, body {
   border-radius: 2px;
   text-decoration: none;
 }
+
 .btn-round {
   border-radius: 50px;
 }
+
 .btn-o {
   border-width: 1px;
   border-style: solid;
@@ -68,6 +70,7 @@ html, body {
 .text-green {
   color: #0eaaa6;
 }
+
 a.text-green:hover {
   color: #068b85;
 }
@@ -79,4 +82,29 @@ a.text-green:hover {
 
 .align-right {
   text-align: right !important;
+}
+
+.slimScroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+}
+
+.slimScroll::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.slimScroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.slimScroll::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 100px;
+}
+
+ol, ul {
+  list-style: none;
 }

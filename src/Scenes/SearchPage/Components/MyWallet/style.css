@@ -1,5 +1,7 @@
 .myWallet {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: 5px solid #0d908d;
 }
