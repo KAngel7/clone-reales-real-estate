@@ -105,3 +105,62 @@
   float: right;
   margin-top: 4px;
 }
+
+.leftNav > ul > li > a > span.badge {
+    font-size: 11px;
+    font-weight: normal;
+    width: auto;
+    top: 15px;
+    left: 38px;
+    padding: 2px 4px;
+    position: absolute;
+    line-height: 10px;
+    border-radius: 7px;
+    text-align: center;
+    min-width: 14px;
+}
+
+.leftNav > ul > li > a > span.arrowRight {
+  display: none;
+}
+
+.leftNav .bg-yellow {
+  background-color: #eab134;
+  color: #fff;
+}
+
+.leftNav ul li:hover a{
+  background-color: #067670;
+  color: #fff;
+  text-decoration: none;
+}
+
+.leftNav ul li:hover a span.navLabel, .leftNav ul li.onTap a span.navLabel {
+  left: 0;
+  text-decoration: none;
+}
+.leftNav ul li:hover a span.navIcon, .leftNav ul li.onTap a span.navIcon {
+  top: 13px;
+  text-decoration: none;
+}
+
+.leftNav ul li:hover ul {
+  left: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.leftNav ul li:hover ul li a, .leftNav ul li.onTap ul li a {
+  color: #96adac;
+  background-color: #132120;
+  width: 100%;
+  font-size: 12px;
+  height: auto;
+}
+
+.leftNav ul li ul li a:hover {
+  color: #fff;
+  background-color: #05635e;
+  padding-left: 30px;
+  text-decoration: none;
+}
