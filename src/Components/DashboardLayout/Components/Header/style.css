@@ -2,7 +2,7 @@
   outline: none;
 }
 
-.header2 {
+.dashboardHeader {
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -12,7 +12,7 @@
   z-index: 1040;
 }
 
-.header2 a {
+.dashboardHeader a {
   color: #999;
   text-decoration: none;
   transition: all .2s ease-in-out;
@@ -389,7 +389,7 @@ a.navHandler:hover {
   .userMenu {
     width: 100% !important;
   }
-  .header2 {
+  .dashboardHeader {
     background-color: #0eaaa6;
     height: 50px;
   }

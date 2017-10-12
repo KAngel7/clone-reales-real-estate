@@ -1,7 +1,8 @@
 .detailTab {
   box-shadow: 1px 1px 5px #888888;
 }
-.detailTab li{
+
+.detailTab li {
   display: inline-block;
   padding: 10px 15px;
   border-bottom: 3px solid transparent;
@@ -16,4 +17,10 @@
 
 .detailTab li.active a {
   color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .detailTab ul {
+    padding-left: 10px;
+  }
 }
