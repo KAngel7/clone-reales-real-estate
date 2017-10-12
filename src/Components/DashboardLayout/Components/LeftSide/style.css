@@ -1,0 +1,295 @@
+.leftSide {
+  background-color: #213837;
+  position: absolute;
+  left: 0;
+  width: 70px;
+  z-index: 100;
+  height: 100%;
+}
+
+.leftSide.expanded {
+  width: 200px;
+}
+
+.closeLeftSide {
+  display: none;
+}
+
+.leftNav .search {
+  display: none;
+}
+
+.leftNav ul, .leftUserWraper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftNav ul li {
+  position: relative;
+  width: 70px;
+}
+
+.expanded .leftNav ul li {
+  width: 200px;
+}
+
+.leftNav ul li a {
+  display: block;
+  font-size: 16px;
+  color: #adc8c7;
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.expanded .leftNav ul li a {
+  width: 200px;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.leftNav ul li a span {
+  position: absolute;
+  width: 70px;
+  display: block;
+  text-align: center;
+  z-index: 110;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.expanded .leftNav ul li a span {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.leftNav ul li:hover a, .leftNav ul li.onTap a {
+  background-color: #067670;
+  color: #fff;
+}
+
+.expanded .leftNav > ul > li.onTap > a {
+  background-color: transparent;
+  color: #adc8c7;
+}
+
+.expanded .leftNav > ul > li.active > a {
+  background-color: #067670;
+  color: #fff;
+}
+
+.leftNav ul li a span.navIcon {
+  top: 22px;
+}
+
+.expanded .leftNav span.navIcon {
+  top: auto;
+  margin-right: 10px;
+}
+
+.leftNav span.navLabel {
+  font-size: 12px;
+  bottom: 10px;
+  left: -70px;
+}
+
+.expanded .leftNav span.navLabel {
+  bottom: 2px;
+  left: 0;
+}
+
+.leftNav ul li:hover a span.navIcon, .leftNav ul li.onTap a span.navIcon {
+  top: 13px;
+  text-decoration: none;
+}
+
+.expanded .leftNav ul li:hover a span.navIcon, .expanded .leftNav ul li.onTap a span.navIcon {
+  top: auto;
+  text-decoration: none;
+}
+
+.leftNav ul li:hover a span.navLabel, .leftNav li.onTap span.navLabel {
+  left: 0;
+  text-decoration: none;
+}
+
+.leftNav span.arrowRight {
+  display: none;
+}
+
+.expanded .leftNav span.arrowRight {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.leftNav span.badge {
+  font-size: 11px;
+  font-weight: normal;
+  width: auto;
+  top: 15px;
+  left: 38px;
+  text-align: center;
+  padding: 2px 4px;
+  position: absolute;
+  line-height: 10px;
+  border-radius: 7px;
+  min-width: 14px;
+}
+
+.expanded .leftNav span.badge {
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10px;
+  float: right;
+  top: auto;
+  left: auto;
+  position: relative;
+  margin-top: 2px;
+}
+
+.expanded .leftNav > ul > li.hasSub > a > span.badge {
+  display: none;
+}
+
+.leftNav > ul > li:hover > a > span.badge {
+  top: 8px;
+}
+
+.expanded .leftNav > ul > li:hover > a > span.badge {
+  top: auto;
+}
+
+.leftNav ul.secondUl {
+  background-color: #132120;
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  left: 50px;
+  z-index: 1100;
+  transition: all .2s ease-in-out;
+}
+
+.expanded .leftNav ul.secondUl {
+  position: relative;
+  left: 0;
+  display: block;
+  max-height: 0;
+  z-index: 1;
+  top: auto;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.expanded .leftNav li.active ul.secondUl{
+  max-height: 600px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.leftNav ul li:hover ul {
+  left: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.leftNav ul li.onTap ul {
+  left: 70px;
+  display: block;
+}
+
+.expanded .leftNav ul li:hover ul, .expanded .leftNav ul li.onTap ul {
+  left: 0;
+}
+
+.leftNav ul.secondUl li {
+  width: 100%;
+}
+
+.leftNav ul.secondUl li a {
+  width: 100%;
+  font-size: 12px;
+  height: auto;
+  padding: 7px 20px;
+}
+
+.leftNav span.icon-right {
+  font-size: 11px;
+  font-weight: normal;
+  margin-right: 0;
+  position: relative;
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+.leftNav ul li:hover ul li a, .leftNav ul li.onTap ul li a {
+  color: #96adac;
+  background-color: #132120;
+  width: 100%;
+  font-size: 12px;
+  height: auto;
+}
+
+.leftNav ul.secondUl li a:hover {
+  color: #fff;
+  background-color: #05635e;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.leftNav a:hover > span.badge {
+  color: #fff;
+}
+
+.leftNav li .openIcon.arrowRight, .leftNav li .openIcon, .leftNav li.active .closeIcon {
+  display: none!important;
+}
+
+.expanded .leftNav li.active .openIcon {
+  display: block!important;
+}
+
+@media screen and (max-width: 767px) {
+  .leftSide {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -87%;
+    transition: all .2s ease-in-out;
+  }
+  .leftSide.expanded {
+    width: 87%;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+  }
+  .closeLeftSide {
+    width: 13%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 100;
+  }
+  .expanded .leftNav ul li {
+    width: 100%;
+  }
+  .expanded .leftNav ul li a {
+    width: 100%;
+  }
+  .expanded .leftNav > ul > li > ul {
+    width: 100%;
+  }
+}

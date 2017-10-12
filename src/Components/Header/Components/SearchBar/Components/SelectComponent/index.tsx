@@ -19,10 +19,6 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
       itemSelected: 0
     };
   }
-  componentDidMount() {
-    document.addEventListener('mousedown', this.handleClickOutside);
-  }
-
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
@@ -32,20 +28,24 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
       !this.wrapperRef.contains(e.target as Node) &&
       this.state.showList
     ) {
-      this.setState({
-        showList: false
-      });
+      this.showToggle();
     }
   }
   showToggle = () => {
+    if (this.state.showList) {
+      document.removeEventListener('mousedown', this.handleClickOutside);
+    } else {
+      document.addEventListener('mousedown', this.handleClickOutside);
+    }
     this.setState({
       showList: !this.state.showList
     });
+
   }
 
-  doSelect = (ind: number) => {
+  doSelect = (index: number) => {
     this.setState({
-      itemSelected: ind
+      itemSelected: index
     });
   }
 
