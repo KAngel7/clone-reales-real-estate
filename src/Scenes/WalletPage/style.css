@@ -1,0 +1,10 @@
+.walletWrapper {
+  margin-left: 70px;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .walletWrapper {
+    margin-left: 0px;
+  }
+}

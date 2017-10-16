@@ -4,7 +4,7 @@ import './style.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from '../../Scenes/HomePage';
 
-import SearchPage from '../../Scenes/SearchPage';
+import WalletPage from '../../Scenes/WalletPage';
 
 class App extends React.Component<{}, {}> {
   render() {
@@ -12,7 +12,7 @@ class App extends React.Component<{}, {}> {
       <Router>
         <div className="globalContainer">
           <Route exact={true} path="/" component={HomePage} />
-          <Route exact={true} path="/search" component={SearchPage} />
+          <Route exact={true} path="/search/:action?" component={WalletPage} />
         </div>
       </Router>
     );

@@ -48,15 +48,6 @@ class LeftSide extends React.Component<LeftSideProps, {}> {
                 <li><a href="#" data-style="css/app.css">Green
                   <span className="fa fa-circle-o c-green icon-right" />
                 </a></li>
-                <li><a href="#" data-style="css/app-blue.css">Blue
-                  <span className="fa fa-circle-o c-blue icon-right" />
-                </a></li>
-                <li><a href="#" data-style="css/app-yellow.css">Yellow
-                  <span className="fa fa-circle-o c-yellow icon-right" />
-                </a></li>
-                <li><a href="#" data-style="css/app-magenta.css">Magenta
-                  <span className="fa fa-circle-o c-magenta icon-right" />
-                </a></li>
               </ul>
             </li>
           </ul>
