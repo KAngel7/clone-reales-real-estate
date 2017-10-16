@@ -12,6 +12,7 @@ class App extends React.Component<{}, {}> {
       <Router>
         <div className="globalContainer">
           <Route exact={true} path="/" component={HomePage} />
+          <Route exact={true} path="/wallet/:action?" component={WalletPage} />
           <Route exact={true} path="/search/:action?" component={WalletPage} />
         </div>
       </Router>

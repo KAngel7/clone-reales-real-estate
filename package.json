@@ -16,7 +16,7 @@
     "@types/redux-promise-middleware": "0.0.8",
     "@types/redux-thunk": "^2.1.0",
     "axios": "^0.16.2",
-    "react": "^15.6.1",
+    "react": "^15.4.2",
     "react-dom": "^15.6.1",
     "react-fa": "^5.0.0",
     "react-redux": "^5.0.6",

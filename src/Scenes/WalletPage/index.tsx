@@ -6,14 +6,23 @@ import DepositForm from './Components/DepositForm';
 import Dashboard from '../../Components/DashboardLayout';
 
 class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
-  WalletPageSection = {
-    myWallet: (<MyWallet />),
-    deposit: (<DepositForm />),
-    withdraw: (<div />),
-    notfound: (null),
+  WalletPageSection: {
+    myWallet: JSX.Element;
+    deposit: JSX.Element;
+    withdraw: JSX.Element;
+    notfound: null;
   };
   constructor() {
     super();
+    this.WalletPageSection = {
+      myWallet: (<MyWallet toAction={this.toAction} />),
+      deposit: (<DepositForm />),
+      withdraw: (<div />),
+      notfound: (null),
+    };
+  }
+  toAction = (action: string) => {
+    this.props.history.push('/wallet/' + action);
   }
   matchSection = () => {
     const walletAction = this.props.match.params.action;

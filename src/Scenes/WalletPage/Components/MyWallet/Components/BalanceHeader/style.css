@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.balanceHeader ul.features {
+.balanceHeader ul.actions {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@
   color: white;
 }
 
-.balanceHeader ul.features li {
+.balanceHeader ul.actions li {
   float: left;
   width: 33.33%;
   text-align: center;
@@ -62,8 +62,12 @@
   border-right: 1px solid #e8e8e8;
 }
 
-.balanceHeader ul.features li:last-child {
+.balanceHeader ul.actions li:last-child {
   border-right: 0 none;
+}
+
+.actions span {
+  color:  #fff;
 }
 
 @media screen and (max-width: 767px) {

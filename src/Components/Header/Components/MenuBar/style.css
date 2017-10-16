@@ -36,40 +36,66 @@ a.homeNavHandler {
   transition: all .2s ease-in-out;
 }
 
-.homeNav ul {
+.homeNav > ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   transition: all .2s ease-in-out;
 }
 
-.homeNav ul li {
+.homeNav > ul > li {
   display: inline-block;
   margin-left: 20px;
   padding-top: 3px;
 }
 
-.homeNav ul li a {
+.homeNav > ul > li a {
   color: #fff;
 }
+
 a.homeNavHandler.active {
   text-shadow: 0 0 10px #fff;
 }
 
+.userMenuLi {
+  height: 21px;
+}
+
+.homeNav .userMenuWrapper {
+  margin-top: -15px;
+  float: right;
+  height: 60px;
+}
+
+.homeNav a.headerUser:hover, .homeNav .userMenuContainer.open a.headerUser {
+  background-color: transparent;
+  color: #fff;
+}
+
+.homeNav .dropdown-menu.pull-right {
+  right: 150px;
+  top: calc(100% + 10px);
+}
+
 @media screen and (max-width: 767px) {
-  .homeNav ul {
+  .homeNav .dropdown-menu.pull-right {
+    right: 0;
+    top: 100%;
+  }
+  .homeNav > ul {
     position: absolute;
     top: 0;
     right: -150%;
     padding: 20px;
     z-index: 1100;
+    text-align: right;
+    width: 100%;
   }
   .homeNav {
     position: absolute;
     top: 76px;
     width: 100%;
     right: 0;
-    overflow: hidden;
     z-index: 150;
     height: 76px;
     background-color: rgba(0, 0, 0, 0);
@@ -77,13 +103,13 @@ a.homeNavHandler.active {
   .homeNav.active {
     background-color: rgba(0, 0, 0, 0.50);
   }
-  .homeNav.active ul {
+  .homeNav.active > ul {
     right: 10px;
   }
-  .homeNav ul li {
+  .homeNav > ul > li {
     margin-left: 18px;
   }
-  .homeNav ul li.moreOption {
+  .homeNav > ul > li.moreOption {
     display: none;
   }
 }
