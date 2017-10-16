@@ -62,7 +62,7 @@ class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
           <ul>
             <li><a href="/wallet"><span className="walletIcon fa" />Wallet</a></li>
             <li><a href="#"><Icon name="cog" />Settings</a></li>
-            <li><a href="#"><Icon name="user" />Profile</a></li>
+            <li><a href="/myinfo"><Icon name="user" />Profile</a></li>
             <li><a href="#">
               <Icon name="bell-o" />
               Notifications

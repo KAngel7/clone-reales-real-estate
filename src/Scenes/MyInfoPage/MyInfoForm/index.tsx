@@ -31,18 +31,7 @@ class MyInfoForm extends React.Component<{}, {}> {
   ];
   render() {
     return (
-      <div className="myInfoForm container">
-        <div className="row">
-          <div className="myInfoHeader">
-            <div className="form-group">
-              <h3>Your details</h3>
-            </div>
-            <div className="form-group">
-              <h5>We'd love to find out more about you. It'll help us make
-                sure our website and apps tick the right boxes.</h5>
-            </div>
-          </div>
-        </div>
+      <div className="myInfoForm">
         <div className="row">
           <div className="form-group">
             <h4>Your name</h4>

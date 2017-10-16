@@ -1,4 +1,10 @@
 .infoWrapper{
   overflow: hidden;
-  padding: 0 20px;
+  border-top: 5px solid #0D908D;
+}
+
+.myInfoHeader{
+  overflow: hidden;
+  background: #0EAAA6;
+  color: white;
 }
