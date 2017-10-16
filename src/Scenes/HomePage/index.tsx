@@ -4,6 +4,8 @@ import { RouteComponentProps } from 'react-router-dom';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 
+import InfoPage from '../InfoPage';
+
 class HomePage extends React.Component<RouteComponentProps<any>, {}> {
   render() {
     return (
@@ -12,7 +14,7 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
           <Header />
         </div>
         <div className="bodyWrapper container">
-          {}
+          <InfoPage />
         </div>
         <div className="footerWrapper">
           <Footer />
