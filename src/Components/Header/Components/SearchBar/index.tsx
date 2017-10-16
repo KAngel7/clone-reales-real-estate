@@ -48,32 +48,32 @@ class SearchBar extends React.Component<SearchBarProps, SelectBarState> {
           <div className="form-group">
             <input type="text" className="form-control" id="city" placeholder="City" />
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <SelectComponent listItem={this.listBed}>Bedrooms</SelectComponent>
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <SelectComponent listItem={this.listBath}>Bathrooms</SelectComponent>
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <div className="input-group">
               <div className="input-group-addon">$</div>
               <input className="form-control price" type="text" placeholder="From" />
             </div>
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <div className="input-group">
               <div className="input-group-addon">$</div>
               <input className="form-control price" type="text" placeholder="To" />
             </div>
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <div className="checkbox custom-checkbox">
               <label>
                 <input type="checkbox" />
                 <Icon name="check" /> For Rent</label>
             </div>
           </div>
-          <div className={`form-group adv${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
+          <div className={`form-group${!this.state.isAdvance ? ' hidden-xs' : ''}`}>
             <div className="checkbox custom-checkbox"><label>
               <input type="checkbox" /><Icon name="check" /> For Sale </label>
             </div>

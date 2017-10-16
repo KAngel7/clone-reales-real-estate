@@ -40,13 +40,13 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
     this.setState({
       showList: !this.state.showList
     });
-
   }
 
   doSelect = (index: number) => {
     this.setState({
       itemSelected: index
     });
+    this.showToggle();
   }
 
   render() {
