@@ -3,7 +3,7 @@ import './style.css';
 
 import { Icon } from 'react-fa';
 
-import SelectComponent from './Components/SelectComponent';
+import SelectComponent from '../../../SelectComponent';
 
 interface SearchBarProps {
 

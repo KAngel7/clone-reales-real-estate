@@ -33,7 +33,7 @@ class Dashboard extends React.Component<{}, DashboardState> {
         <div className="bodyWrapper">
           <LeftSide isExpand={this.state.isExpand} />
           <div 
-            className={'bodyWrapper' + (this.state.isExpand ? ' smallSize' : '')}
+            className={'' + (this.state.isExpand ? ' smallSize' : '')}
             onClick={this.clickOutsideLeftSide}
           >
             {this.props.children}
