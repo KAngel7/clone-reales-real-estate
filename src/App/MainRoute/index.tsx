@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from '../../Scenes/HomePage';
 
 import WalletPage from '../../Scenes/WalletPage';
-import PageInfo from '../../Scenes/InfoPage';
+import PageInfo from '../../Scenes/MyInfoPage';
 
 class App extends React.Component<{}, {}> {
   render() {

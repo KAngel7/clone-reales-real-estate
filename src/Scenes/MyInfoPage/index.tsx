@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import Dashboard from '../../Components/DashboardLayout';
+import MyInfoForm from './MyInfoForm';
 import { RouteComponentProps } from 'react-router-dom';
 
 class InfoPage extends React.Component<RouteComponentProps<any>, {}> {
@@ -9,7 +10,7 @@ class InfoPage extends React.Component<RouteComponentProps<any>, {}> {
       <div className="infoPage">
         <Dashboard >
           <div className="infoWrapper">
-            <h2>INFO PAGE</h2>
+            <MyInfoForm />
           </div>
         </Dashboard>
       </div>

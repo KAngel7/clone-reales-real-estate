@@ -25,3 +25,7 @@
   width:100%;
   min-width: 0;
 }
+
+.dropdown-select > li > a:hover{
+  background-color: #f3f3f3;
+}
