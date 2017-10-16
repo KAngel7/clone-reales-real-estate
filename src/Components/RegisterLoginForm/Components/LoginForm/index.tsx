@@ -8,15 +8,40 @@ interface LoginFormProps {
 }
 
 interface LoginFormState {
-
+  remember: boolean;
+  email: string;
+  password: string;
 }
 
 class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
   constructor() {
     super();
     this.state = {
-
+      remember: false,
+      email: '',
+      password: ''
     };
+  }
+  signIn = (method?: 'fb' | 'gg') => {
+    /* Test code */
+    localStorage.setItem('loginStatus', 'true');
+    window.location.href = '/';
+    /* End test code */
+  }
+  toggleRemember = (e: React.ChangeEvent<HTMLInputElement>) => {
+    this.setState({
+      remember: e.currentTarget.checked
+    });
+  }
+  updateEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    this.setState({
+      email: e.currentTarget.value
+    });
+  }
+  updatePassword = (e: React.ChangeEvent<HTMLInputElement>) => {
+    this.setState({
+      password: e.currentTarget.value
+    });
   }
   render() {
     return (
@@ -32,7 +57,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
               <form role="form">
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="explore.html" className="btn btn-lg btn-facebook">
+                    <a href="#" className="btn btn-lg btn-facebook" onClick={(e) => this.signIn('fb')}>
                       <Icon name="facebook" className="pull-left" />
                       <span>Sign In with Facebook</span>
                     </a>
@@ -40,7 +65,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="explore.html" className="btn btn-lg btn-google">
+                    <a href="#" className="btn btn-lg btn-google" onClick={(e) => this.signIn('gg')}>
                       <Icon name="google" className="pull-left" />
                       <span>Sign In with Google</span>
                   </a>
@@ -48,17 +73,27 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="signOr">OR</div>
                 <div className="form-group">
-                  <input type="text" placeholder="Email Address" className="form-control" />
+                  <input 
+                    type="text" 
+                    placeholder="Email Address" 
+                    className="form-control" 
+                    onChange={this.updateEmail}
+                  />
                 </div>
                 <div className="form-group">
-                  <input type="password" placeholder="Password" className="form-control" />
+                  <input 
+                    type="password" 
+                    placeholder="Password" 
+                    className="form-control" 
+                    onChange={this.updatePassword}
+                  />
                 </div>
                 <div className="form-group">
                   <div className="row">
                     <div className="col-xs-6">
                       <div className="checkbox custom-checkbox">
                         <label>
-                          <input type="checkbox" />
+                          <input type="checkbox" checked={this.state.remember} onChange={this.toggleRemember}/>
                           <Icon name="check" />
                           Remember me
                         </label>
@@ -75,7 +110,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="explore.html" className="btn btn-lg btn-green isThemeBtn btn-red">
+                    <a href="#" className="btn btn-lg btn-green isThemeBtn btn-red" onClick={(e) => this.signIn()}>
                       Sign In
                     </a>
                   </div>

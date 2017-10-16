@@ -1,0 +1,176 @@
+.userMenu {
+  width: 190px;
+}
+
+.bg-red {
+  color: #fff;
+  background-color: #ea3d36;
+}
+
+.userMenu ul > li > a > span.badge {
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 0;
+}
+
+.userMenu ul > li > a:hover, .userMenu ul > li > a:focus {
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #3a3a3a;
+  outline: 0 none !important;
+}
+
+.headerUserName {
+  margin-right: 5px;
+}
+
+.userMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.userMenu ul > li > a {
+  padding: 7px 20px;
+  display: block;
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.userMenu ul > li > a > span {
+  margin-right: 5px;
+  transition: all .2s ease-in-out;
+}
+
+a.userHandler {
+  position: relative;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 13px;
+  height: 50px;
+  width: 20px;
+  color: #fff;
+  display: none;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.icon-user {
+  font-family: 'Simple-Line-Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+a.userHandler .counter {
+  top: 10px;
+  left: 12px;
+  background-color: #ea3d36;
+  color: #fff;
+  position: absolute;
+  display: block;
+  padding: 2px;
+  font-size: 11px;
+  line-height: 10px;
+  border-radius: 7px;
+  text-align: center;
+  min-width: 14px;
+  text-decoration: none;
+}
+
+a.headerUser:hover, .userMenuContainer.open a.headerUser {
+  background-color: #f3f3f3;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+a.headerUser {
+  display: block;
+  height: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.headerAvatar {
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.userTop {
+  margin: 20px 0 0 7px;
+  font-size: 13px;
+}
+
+.userMenu {
+  width: 190px;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -20px;
+  transition: all .2s ease-in-out;
+}
+
+.userMenuContainer .dropdown-menu {
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+}
+
+.mobAvatar {
+  display: none;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.mobAvatarImg {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e8e8e8;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.mobAvatarName {
+  padding-top: 5px;
+}
+
+.userMenu .fa {
+  width: 13px;
+  height: 13px;
+  text-align: center;
+}
+
+.walletIcon {
+  background: url('./imgs/wallet.svg') 0 0 no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .userMenu {
+    width: 100% !important;
+  }
+  .headerUserWraper {
+    height: 50px;
+  }
+  a.userHandler {
+    display: block;
+  }
+  a.headerUser {
+    display: none;
+  }
+  .headerUserWraper .dropdown-menu {
+    border-radius: 0;
+    border: 0 none;
+  }
+  .mobAvatar {
+    display: block;
+  }
+}

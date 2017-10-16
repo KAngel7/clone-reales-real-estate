@@ -3,7 +3,7 @@ import './style.css';
 
 import { Icon } from 'react-fa';
 
-import UserMenu from './Components/UserMenu';
+import UserMenu from '../../../../Components/UserMenu';
 import NotifyMenu from './Components/NotifyMenu';
 import SearchForm from './Components/SearchForm';
 
@@ -33,7 +33,9 @@ class Header extends React.Component<HeaderProps, Header2State> {
         </div>
         <a href="#" className="navHandler" onClick={this.props.clickToggle}><Icon  name="bars" /></a>
         <SearchForm />
-        <UserMenu />
+        <div className="userMenuWrapper">
+          <UserMenu />
+        </div>
         <NotifyMenu />
         <a href="#" className="mapHandler"><Icon name="map-o" /></a>
         <div className="clearfix" />

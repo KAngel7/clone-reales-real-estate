@@ -48,13 +48,6 @@
   float: left;
 }
 
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-}
-
 .checkbox.custom-checkbox span, .radio.custom-radio span {
   background-color: #fff;
   border: 1px solid #999;
