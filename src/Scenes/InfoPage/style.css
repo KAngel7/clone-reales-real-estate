@@ -1,0 +1,162 @@
+.infoPage .details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #eff0f4;
+}
+
+.details .details-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.details .details-subtext {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.infoPage .details fieldset {
+  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.infoPage .name-fields {
+  width: 100%;
+  float: left;
+}
+
+
+.details .details-subheading {
+  margin: 0 0 10px 0;
+}
+
+.details .name-fields .field-container {
+  max-width: 300px;
+}
+
+.details .field-container {
+  float: left;
+  margin: 0 0 10px 0;
+}
+
+.infoPage .rui-input,.infoPage .rui-select-menu,.infoPage .rui-select li {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.info Page .rui-input {
+  border: 2px solid #c3c8ce;
+  padding: 13px 16px;
+  border-radius: 4px;
+  color: #333f48;
+  background-color: #fff;
+  font-size: 1em;
+  font-family: Museo-Sans-500,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.details .field-container+.field-container {
+  margin-left: 1%;
+}
+
+.details .birthYear-fields{
+  float: left;
+}
+
+.details .field-container.birthYear {
+  width: 110px;
+}
+
+.details .field-container.ratherNotSay {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+  margin-left: 10px;
+  line-height: 48px;
+}
+
+.details .gender-fields {
+  padding-left: 30px;
+  min-width: 190px;
+  float:left;
+}
+
+.infoPage .hide{
+  display:none;
+}
+
+.infoPage .address-container {
+  width: 46%;
+}
+
+.details .household-fields section {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
+.details .household-fields section:first-child>div {
+  padding-right: 8%;
+  padding-left: 0;
+}
+
+.details .household-fields .field-container {
+  max-width: none;
+  float: none;
+}
+
+.details .household-fields section>div {
+  padding-left: 8%;
+}
+
+.infoPage .button-holder {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.infoPage .save-profile {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.infoPage .rui-button-brand {
+  border-color: #E4002B;
+  background: #E4002B;
+}
+
+.skip {
+  margin: 20px auto;
+  width: 156px;
+}
+
+.skip .left-line {
+  width: 60px;
+  height: 10px;
+  border-bottom: 1px solid #ADB2B5;
+  float: left;
+}
+
+.skip .or {
+  float: left;
+  margin: 0 10px;
+  color: #ADB2B5;
+}
+
+.skip .right-line {
+  width: 60px;
+  height: 10px;
+  border-bottom: 1px solid #ADB2B5;
+  float: left;
+}
+
+.complete-later {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.complete-later a {
+  text-decoration: none;
+  color: #727F86;
+}
+
