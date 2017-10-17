@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import Dashboard from '../../Components/DashboardLayout';
-import MyInfoForm from './MyInfoForm';
+import MyInfoForm from './Components/MyInfoForm';
 import { RouteComponentProps } from 'react-router-dom';
 
 class InfoPage extends React.Component<RouteComponentProps<any>, {}> {

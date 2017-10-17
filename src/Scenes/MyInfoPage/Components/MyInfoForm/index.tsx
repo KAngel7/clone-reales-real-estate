@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 
-import SelectComponent from '../../../Components/SelectComponent';
+import SelectComponent from '../../../../Components/SelectComponent';
 
 class MyInfoForm extends React.Component<{}, {}> {
   yearOfBirth = [
@@ -61,10 +61,10 @@ class MyInfoForm extends React.Component<{}, {}> {
             </div>
             <div className="form-group col-xs-12 col-sm-12 col-md-12">
               <div className="col-xs-12 col-sm-12 col-md-12">
-                <div className="form-group col-xs-8 col-sm-6 col-md-6 radioGender">
+                <div className="form-group radioGender">
                   <label><input type="radio" name="gender" id="" />Male</label>
                 </div>
-                <div className="form-group col-xs-8 col-sm-6 col-md-6 radioGender">
+                <div className="form-group radioGender">
                   <label><input type="radio" name="gender" id="" />Female</label>
                 </div>
               </div>

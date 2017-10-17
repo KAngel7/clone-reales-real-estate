@@ -10,6 +10,7 @@
 .contentWrapper {
   margin-left: 70px;
   height: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
