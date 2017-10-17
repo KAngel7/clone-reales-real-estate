@@ -29,3 +29,7 @@
 .dropdown-select > li > a:hover{
   background-color: #f3f3f3;
 }
+
+.dropdown-select.switchTop{
+  bottom: calc(100% + 5px);
+}

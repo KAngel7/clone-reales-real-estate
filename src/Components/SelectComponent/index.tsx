@@ -3,6 +3,7 @@ import './style.css';
 
 interface SelectComponentProps {
   listItem: string[];
+  switchTop?: boolean;
 }
 
 interface SelectComponentState {
@@ -56,7 +57,7 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
             <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span> 
             <span className="caret" />
           </a>
-          <ul  className={`dropdown-menu dropdown-select${this.state.showList ? ' active' : ''}`}>
+          <ul  className={`dropdown-menu dropdown-select${this.state.showList ? ' active' : ''}${this.props.switchTop ? ' switchTop' : ''}`}>
             {this.props.listItem.map((item, index) => {
                 return (
                   <li key={index} onClick={e => { this.doSelect(index); }}>

@@ -49,10 +49,10 @@ class SearchBar extends React.Component<SearchBarProps, SelectBarState> {
             <input type="text" className="form-control" id="city" placeholder="City" />
           </div>
           <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
-            <SelectComponent listItem={this.listBed}>Bedrooms</SelectComponent>
+            <SelectComponent switchTop={true} listItem={this.listBed}>Bedrooms</SelectComponent>
           </div>
           <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
-            <SelectComponent listItem={this.listBath}>Bathrooms</SelectComponent>
+            <SelectComponent switchTop={true} listItem={this.listBath}>Bathrooms</SelectComponent>
           </div>
           <div className={`form-group${this.state.isAdvance ? ' adv' : ' hidden-xs'}`}>
             <div className="input-group">
