@@ -64,7 +64,7 @@ class RegisterForm extends React.Component<RegisterFormProps, RegisterFormState>
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="explore.html" className="btn btn-lg btn-green isThemeBtn btn-red">Sign Up</a>
+                    <a href="/myprofile" className="btn btn-lg btn-green isThemeBtn btn-red">Sign Up</a>
                   </div>
                 </div>
                 <p className="help-block">

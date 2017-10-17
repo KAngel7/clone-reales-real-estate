@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { Icon } from 'react-fa';
+import { Link } from 'react-router-dom';
 
 interface LeftSideProps {
   isExpand: boolean;
@@ -18,20 +19,20 @@ class LeftSide extends React.Component<LeftSideProps, {}> {
       <div className={`leftSide${this.props.isExpand ? ' expanded' : ''}`}>
         <nav className="leftNav scrollable bigNav">
           <ul>
-            <li><a href="explore.html">
+            <li><Link to="/search">
               <Icon className="navIcon" name="compass" />
-              <span className="navLabel">Explore</span>
-            </a>
+              <span className="navLabel">Search</span>
+            </Link>
             </li>
-            <li><a href="single.html">
+            <li><Link to="/myhouse">
               <Icon className="navIcon icon-home" name="home" />
-              <span className="navLabel">Single</span>
-            </a>
+              <span className="navLabel">My house</span>
+            </Link>
             </li>
-            <li><a href="add.html">
+            <li><Link to="/newhouse">
               <Icon className="navIcon" name="plus-circle" />
-              <span className="navLabel">New</span>
-            </a>
+              <span className="navLabel">Add Property</span>
+            </Link>
             </li>
             <li className="hasSub hasSubActive">
               <a href="#" onClick={this.toggleActive}>

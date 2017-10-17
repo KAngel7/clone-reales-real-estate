@@ -1,15 +1,8 @@
 import * as React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
-interface BalanceHeaderProps {
-  toAction: (action: string) => void;
-}
-
-class BalanceHeader extends React.Component<BalanceHeaderProps, {}> {
-  openActionForm = (action: string, e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    this.props.toAction(action);
-  }
+class BalanceHeader extends React.Component<{}, {}> {
   render() {
     return (
       <div className="balanceHeader">
@@ -26,24 +19,9 @@ class BalanceHeader extends React.Component<BalanceHeaderProps, {}> {
         </div>
         <div className="balanceActions">
           <ul className="actions">
-            <li><a
-              href="/wallet/withdraw"
-              onClick={(e) => this.openActionForm('withdraw', e)}
-            >
-              <span>Send Money</span>
-            </a></li>
-            <li><a
-              href="/wallet/requestmoney"
-              onClick={(e) => this.openActionForm('requestmoney', e)}
-            >
-              <span>Request Money</span>
-            </a></li>
-            <li><a
-              href="/wallet/deposit"
-              onClick={(e) => this.openActionForm('deposit', e)}
-            >
-              <span>Add Money</span>
-            </a></li>
+            <li><Link to="/wallet/withdraw"><span>Send Money</span></Link></li>
+            <li><Link to="/wallet/request"><span>Request Money</span></Link></li>
+            <li><Link to="/wallet/deposit"><span>Add Money</span></Link></li>
           </ul>
         </div>
       </div>

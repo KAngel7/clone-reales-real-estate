@@ -15,14 +15,11 @@ class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
   constructor() {
     super();
     this.WalletPageSection = {
-      myWallet: (<MyWallet toAction={this.toAction} />),
+      myWallet: (<MyWallet />),
       deposit: (<DepositForm />),
       withdraw: (<div />),
       notfound: (null),
     };
-  }
-  toAction = (action: string) => {
-    this.props.history.push('/wallet/' + action);
   }
   matchSection = () => {
     const walletAction = this.props.match.params.action;

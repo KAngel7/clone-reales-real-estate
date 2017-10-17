@@ -109,3 +109,12 @@ a.text-green:hover {
 ol, ul {
   list-style: none;
 }
+
+.invisible {
+  visibility: hidden;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}

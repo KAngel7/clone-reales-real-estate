@@ -3,16 +3,12 @@ import './style.css';
 import BalanceHeader from './Components/BalanceHeader';
 import Details from './Components/Details';
 
-interface MyWalletProps {
-  toAction: (action: string) => void;
-}
-
-class MyWallet extends React.Component<MyWalletProps, {}> {
+class MyWallet extends React.Component<{}, {}> {
   render() {
     return (
       <div className="myWallet slimScroll">
         <div className="balanceHeaderWrapper">
-          <BalanceHeader toAction={this.props.toAction}/>
+          <BalanceHeader />
         </div>
         <div className="DetailsWrapper">
           <Details />

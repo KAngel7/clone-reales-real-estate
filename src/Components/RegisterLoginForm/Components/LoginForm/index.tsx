@@ -57,34 +57,34 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
               <form role="form">
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="#" className="btn btn-lg btn-facebook" onClick={(e) => this.signIn('fb')}>
+                    <div className="btn btn-lg btn-facebook" onClick={(e) => this.signIn('fb')}>
                       <Icon name="facebook" className="pull-left" />
                       <span>Sign In with Facebook</span>
-                    </a>
+                    </div>
                   </div>
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="#" className="btn btn-lg btn-google" onClick={(e) => this.signIn('gg')}>
+                    <div className="btn btn-lg btn-google" onClick={(e) => this.signIn('gg')}>
                       <Icon name="google" className="pull-left" />
                       <span>Sign In with Google</span>
-                  </a>
+                    </div>
                   </div>
                 </div>
                 <div className="signOr">OR</div>
                 <div className="form-group">
-                  <input 
-                    type="text" 
-                    placeholder="Email Address" 
-                    className="form-control" 
+                  <input
+                    type="text"
+                    placeholder="Email Address"
+                    className="form-control"
                     onChange={this.updateEmail}
                   />
                 </div>
                 <div className="form-group">
-                  <input 
-                    type="password" 
-                    placeholder="Password" 
-                    className="form-control" 
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    className="form-control"
                     onChange={this.updatePassword}
                   />
                 </div>
@@ -93,7 +93,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                     <div className="col-xs-6">
                       <div className="checkbox custom-checkbox">
                         <label>
-                          <input type="checkbox" checked={this.state.remember} onChange={this.toggleRemember}/>
+                          <input type="checkbox" checked={this.state.remember} onChange={this.toggleRemember} />
                           <Icon name="check" />
                           Remember me
                         </label>
@@ -110,15 +110,14 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <a href="#" className="btn btn-lg btn-green isThemeBtn btn-red" onClick={(e) => this.signIn()}>
+                    <div className="btn btn-lg btn-green isThemeBtn btn-red" onClick={(e) => this.signIn()}>
                       Sign In
-                    </a>
+                    </div>
                   </div>
                 </div>
                 <p className="help-block">
                   <span>Don't have an account? </span>
                   <a
-                    href="#"
                     className="modal-su text-green isThemeText text-red"
                     onClick={this.props.openRegisterForm}
                   >

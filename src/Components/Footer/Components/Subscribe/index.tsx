@@ -12,7 +12,7 @@ class Subscribe extends React.Component<{}, {}> {
             <input type="email" className="form-control" placeholder="Email Address" />
       </div>
             <div className="form-group">
-              <a href="#" className="btn btn-green btn-block isThemeBtn btn-red">Subscribe</a>
+              <a href="#" className="btn btn-green btn-block isThemeBtn">Subscribe</a>
             </div>
       </form>
       </div>
