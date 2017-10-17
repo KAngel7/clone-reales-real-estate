@@ -1,7 +1,16 @@
 import * as React from 'react';
 import './style.css';
+import SelectComponent from '../../../../Components/SelectComponent';
 
 class DepositForm extends React.Component<{}, {}> {
+  types =[
+    'Bitcoin',
+    'USD'
+  ];
+  methods = [
+    'Bank',
+    'COD'
+  ];
   render() {
     return (
       <div>
@@ -16,11 +25,11 @@ class DepositForm extends React.Component<{}, {}> {
             </div>
             <div className="input-group form-group">
               <span className="input-group-addon">Type</span>
-              <input type="text" className="form-control" placeholder="Type Info" />
+              <SelectComponent listItem={this.types} />
             </div>
             <div className="input-group form-group">
               <span className="input-group-addon">Method</span>
-              <input type="text" className="form-control" placeholder="Method Info" />
+              <SelectComponent listItem={this.methods} />
             </div>
             <div className="button-group form-group">
               <button className="btn btn-white">{'<< Back'}</button>
