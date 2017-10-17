@@ -12,13 +12,6 @@
   z-index: 1040;
 }
 
-.dashboardHeader a {
-  color: #999;
-  text-decoration: none;
-  transition: all .2s ease-in-out;
-  background: transparent;
-}
-
 .logo {
   background-color: #0eaaa6;
   float: left;

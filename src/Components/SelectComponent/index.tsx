@@ -24,7 +24,7 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
   }
   handleClickOutside = (e: MouseEvent) => {
     if (
-      this.wrapperRef && 
+      this.wrapperRef &&
       !this.wrapperRef.contains(e.target as Node) &&
       this.state.showList
     ) {
@@ -51,21 +51,24 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
 
   render() {
     return (
-      <div className="selectComponent" ref={(div) => {this.wrapperRef = div; }}>
-          <a href="#!" data-toggle="dropdown" className="btn btn-white dropdown-toggle" onClick={this.showToggle}>
-            <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span> 
-            <span className="caret" />
-          </a>
-          <ul  className={`dropdown-menu dropdown-select${this.state.showList ? ' active' : ''}`}>
-            {this.props.listItem.map((item, index) => {
-                return (
-                  <li key={index} onClick={e => { this.doSelect(index); }}>
-                    <a href="#!">{item}</a>
-                  </li>
-                );
-            })}
-          </ul>
-        </div>
+      <div
+        className={'selectComponent' + (this.state.showList ? ' active' : '')}
+        ref={(div) => { this.wrapperRef = div; }}
+      >
+        <a href="#" className="dropdown-toggle form-control" onClick={this.showToggle}>
+          <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span>
+          <span className="caret" />
+        </a>
+        <ul className="dropdown-menu dropdown-select">
+          {this.props.listItem.map((item, index) => {
+            return (
+              <li key={index} onClick={e => { this.doSelect(index); }}>
+                <a href="#!">{item}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 }

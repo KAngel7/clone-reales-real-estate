@@ -1,31 +1,26 @@
-.selectComponent .active{
-  display:block;
-}
-
-.selectComponent{
+.selectComponent {
   position: relative;
 }
 
-.selectComponent{
-  border: 2px solid #c3c8ce;
-  border-radius: 4px;
+.selectComponent.active ul.dropdown-select {
+  display: block;
 }
 
-.selectComponent a{
+.selectComponent a {
   width: 100%;
 }
 
-.selectComponent a .caret{
+.selectComponent a .caret {
   position: absolute;
   right: 5px;
   top: 17px;
 }
 
-.selectComponent .dropdown-menu{
-  width:100%;
+.selectComponent .dropdown-menu {
+  width: 100%;
   min-width: 0;
 }
 
-.dropdown-select > li > a:hover{
+.dropdown-select > li > a:hover {
   background-color: #f3f3f3;
 }

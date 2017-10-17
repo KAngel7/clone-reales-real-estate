@@ -109,3 +109,7 @@ a.text-green:hover {
 ol, ul {
   list-style: none;
 }
+
+.invisible {
+  visibility: hidden;
+}

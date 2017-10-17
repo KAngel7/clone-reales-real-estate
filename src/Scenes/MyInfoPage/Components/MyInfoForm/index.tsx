@@ -32,67 +32,55 @@ class MyInfoForm extends React.Component<{}, {}> {
   render() {
     return (
       <div className="myInfoForm">
-        <div className="row">
-          <div className="form-group">
+        <div className="row form-group">
+          <div className="first-name form-group col-xs-12 col-sm-6 col-md-6">
             <h4>Your name</h4>
+            <input type="text" className="form-control" placeholder="First name" />
           </div>
-          <div className="form-group">
-            <div className="first-name col-xs-12 col-sm-6 col-md-3 form-group">
-              <input type="text" className="form-control" placeholder="First name" />
-            </div>
-            <div className="last-name col-xs-12 col-sm-6 col-md-3 form-group">
-              <input type="text" className="form-control" placeholder="Last name" />
-            </div>
+          <div className="last-name form-group col-xs-12 col-sm-6 col-md-6">
+            <h4 className="hidden-xs invisible">Your last name</h4>
+            <input type="text" className="form-control" placeholder="Last name" />
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-6 col-sm-3 col-md-2 yearOfBirth">
-            <div className="form-group">
-              <h4>Year of birth</h4>
-            </div>
-            <div className="form-group selectItem">
+        <div className="row form-group">
+          <div className="col-xs-6 col-sm-6 col-md-6 yearOfBirth">
+            <h4>Year of birth</h4>
+            <div className="selectItem">
               <SelectComponent listItem={this.yearOfBirth} />
             </div>
           </div>
-
-          <div className="col-xs-6 col-sm-3 col-md-2 gender">
-            <div className="form-group">
-              <h4>Gender</h4>
+          <div className="col-xs-6 col-sm-6 col-md-6 gender">
+            <h4>Gender</h4>
+            <div className="radioGender">
+              <label><input type="radio" name="gender" />Male</label>
             </div>
-            <div className="form-group col-xs-12 col-sm-12 col-md-12">
-              <div className="col-xs-12 col-sm-12 col-md-12">
-                <div className="form-group radioGender">
-                  <label><input type="radio" name="gender" id="" />Male</label>
-                </div>
-                <div className="form-group radioGender">
-                  <label><input type="radio" name="gender" id="" />Female</label>
-                </div>
-              </div>
+            <div className="radioGender">
+              <label><input type="radio" name="gender" />Female</label>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="form-group">
+        <div className="row form-group">
+
+          <div className="form-group col-sm-12 col-md-6">
             <h4>Your street address</h4>
+            <input type="text" className="form-control" placeholder="Address" />
           </div>
-          <div className="form-group">
-            <div className="col-xs-12 col-sm-12 col-md-6 form-group">
-              <input type="text" name="" id="" className="form-control" placeholder="Address" />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-2 form-group">
-              <SelectComponent listItem={this.propertyType} />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-2 form-group">
-              <SelectComponent listItem={this.bedProperty} />
-            </div>
-            <div className="col-xs-12 col-sm-4 col-md-2 form-group">
-              <SelectComponent listItem={this.ownOrRent} />
-            </div>
+          <div className="form-group col-xs-12 col-sm-4 col-md-2">
+            <h4 className="hidden-xs invisible">Property Type</h4>
+            <SelectComponent listItem={this.propertyType} />
+          </div>
+          <div className="form-group col-xs-12 col-sm-4 col-md-2">
+            <h4 className="hidden-xs invisible">Beds</h4>
+            <SelectComponent listItem={this.bedProperty} />
+          </div>
+          <div className="form-group col-xs-12 col-sm-4 col-md-2">
+            <h4 className="hidden-xs invisible">Own Or Rent</h4>
+            <SelectComponent listItem={this.ownOrRent} />
           </div>
         </div>
         <div className="row btnRow">
           <div className="form-group">
-            <input type="button" className="btn btn-danger btn-lg" value="Save profile" />
+            <input type="button" className="btn btn-green btn-lg" value="Save profile" />
           </div>
         </div>
       </div>
