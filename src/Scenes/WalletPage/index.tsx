@@ -3,6 +3,8 @@ import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
 import MyWallet from './Components/MyWallet';
 import DepositForm from './Components/DepositForm';
+import WithdrawForm from './Components/WithdrawForm';
+import RequestForm from './Components/RequestForm';
 import Dashboard from '../../Components/DashboardLayout';
 
 class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
@@ -10,6 +12,7 @@ class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
     myWallet: JSX.Element;
     deposit: JSX.Element;
     withdraw: JSX.Element;
+    request: JSX.Element;
     notfound: null;
   };
   constructor() {
@@ -17,8 +20,9 @@ class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
     this.WalletPageSection = {
       myWallet: (<MyWallet />),
       deposit: (<DepositForm />),
-      withdraw: (<div />),
-      notfound: (null),
+      withdraw: (<WithdrawForm />),
+      request: (<RequestForm />),
+      notfound: (null)
     };
   }
   matchSection = () => {
@@ -30,6 +34,8 @@ class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
         return this.WalletPageSection.deposit;
       case 'withdraw': 
         return this.WalletPageSection.withdraw;
+      case 'request': 
+        return this.WalletPageSection.request;
       default:
         return this.WalletPageSection.notfound;
     }

@@ -64,7 +64,7 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
           {this.props.listItem.map((item, index) => {
             return (
               <li key={index} onClick={e => { this.doSelect(index); }}>
-                <a href="#!">{item}</a>
+                <a>{item}</a>
               </li>
             );
           })}

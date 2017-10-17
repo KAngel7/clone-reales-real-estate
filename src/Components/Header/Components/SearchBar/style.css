@@ -26,7 +26,6 @@
   border-radius: 2px;
   border: 1px solid #dfdfdf;
   transition: all .2s ease-in-out;
-  top: inherit;
 }
 
 .dropdown-select input {

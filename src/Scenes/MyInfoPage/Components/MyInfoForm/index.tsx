@@ -66,15 +66,15 @@ class MyInfoForm extends React.Component<{}, {}> {
             <input type="text" className="form-control" placeholder="Address" />
           </div>
           <div className="form-group col-xs-12 col-sm-4 col-md-2">
-            <h4 className="hidden-xs invisible">Property Type</h4>
+            <h4 className="hidden-xs hidden-sm invisible">Property Type</h4>
             <SelectComponent listItem={this.propertyType} />
           </div>
           <div className="form-group col-xs-12 col-sm-4 col-md-2">
-            <h4 className="hidden-xs invisible">Beds</h4>
+            <h4 className="hidden-xs hidden-sm invisible">Beds</h4>
             <SelectComponent listItem={this.bedProperty} />
           </div>
           <div className="form-group col-xs-12 col-sm-4 col-md-2">
-            <h4 className="hidden-xs invisible">Own Or Rent</h4>
+            <h4 className="hidden-xs hidden-sm invisible">Own Or Rent</h4>
             <SelectComponent listItem={this.ownOrRent} />
           </div>
         </div>

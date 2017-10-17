@@ -1,5 +1,7 @@
 .selectComponent {
   position: relative;
+  display: flex;
+  user-select: none;
 }
 
 .selectComponent.active .dropdown-toggle {
@@ -29,8 +31,10 @@
 
 .dropdown-select > li > a:hover {
   background-color: #f3f3f3;
+  cursor: pointer;
 }
 
 .dropdown-select.switchTop {
   bottom: calc(100% + 5px);
+  top: inherit;
 }

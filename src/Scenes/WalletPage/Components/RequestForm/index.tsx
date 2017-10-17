@@ -2,7 +2,7 @@ import * as React from 'react';
 import './style.css';
 import SelectComponent from '../../../../Components/SelectComponent';
 
-class DepositForm extends React.Component<{}, {}> {
+class RequestForm extends React.Component<{}, {}> {
   types = [
     'Bitcoin',
     'USD'
@@ -15,7 +15,7 @@ class DepositForm extends React.Component<{}, {}> {
     return (
       <div>
         <div className="dashboardTitle">
-          <h3>Deposit Form</h3>
+          <h3>Request Form</h3>
         </div>
         <div className="depositForm">
           <form>
@@ -42,4 +42,4 @@ class DepositForm extends React.Component<{}, {}> {
   }
 }
 
-export default DepositForm;
+export default RequestForm;

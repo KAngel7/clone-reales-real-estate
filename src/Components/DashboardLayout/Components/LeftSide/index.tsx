@@ -29,9 +29,9 @@ class LeftSide extends React.Component<LeftSideProps, {}> {
               <span className="navLabel">My house</span>
             </Link>
             </li>
-            <li><Link to="/newhouse">
+            <li><Link to="/newproperty">
               <Icon className="navIcon" name="plus-circle" />
-              <span className="navLabel">Add Property</span>
+              <span className="navLabel" style={{}}>Add Property</span>
             </Link>
             </li>
             <li className="hasSub hasSubActive">
