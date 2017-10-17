@@ -2,15 +2,21 @@
   position: relative;
 }
 
+.selectComponent.active .dropdown-toggle {
+  color: #333;
+}
+
 .selectComponent.active ul.dropdown-select {
   display: block;
 }
 
-.selectComponent a {
+.selectComponent .dropdown-toggle {
+  cursor: pointer;
   width: 100%;
+  color: #999;
 }
 
-.selectComponent a .caret {
+.selectComponent .caret {
   position: absolute;
   right: 5px;
   top: 17px;
@@ -25,6 +31,6 @@
   background-color: #f3f3f3;
 }
 
-.dropdown-select.switchTop{
+.dropdown-select.switchTop {
   bottom: calc(100% + 5px);
 }
