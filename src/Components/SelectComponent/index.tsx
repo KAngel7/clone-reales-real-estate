@@ -52,24 +52,24 @@ class SelectComponent extends React.Component<SelectComponentProps, SelectCompon
 
   render() {
     return (
-      <div 
-        ref={(div) => {this.wrapperRef = div; }}
+      <div
+        ref={(div) => { this.wrapperRef = div; }}
         className={'selectComponent' + (this.state.showList ? ' active' : '')}
       >
-          <a href="#!" data-toggle="dropdown" className="form-control dropdown-toggle" onClick={this.showToggle}>
-            <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span> 
-            <span className="caret" />
-          </a>
-          <ul  className={`dropdown-menu dropdown-select${this.props.switchTop ? ' switchTop' : ''}`}>
-            {this.props.listItem.map((item, index) => {
-                return (
-                  <li key={index} onClick={e => { this.doSelect(index); }}>
-                    <a href="#!">{item}</a>
-                  </li>
-                );
-            })}
-          </ul>
+        <div className="form-control dropdown-toggle" onClick={this.showToggle}>
+          <span className="dropdown-label">{this.props.listItem[this.state.itemSelected]}</span>
+          <span className="caret" />
         </div>
+        <ul className={`dropdown-menu dropdown-select${this.props.switchTop ? ' switchTop' : ''}`}>
+          {this.props.listItem.map((item, index) => {
+            return (
+              <li key={index} onClick={e => { this.doSelect(index); }}>
+                <a href="#!">{item}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 }

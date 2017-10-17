@@ -15,7 +15,7 @@ class App extends React.Component<{}, {}> {
           <Route exact={true} path="/" component={HomePage} />
           <Route exact={true} path="/wallet/:action?" component={WalletPage} />
           <Route exact={true} path="/search/:action?" component={WalletPage} />
-          <Route exact={true} path="/myinfo" component={PageInfo} />
+          <Route exact={true} path="/myprofile" component={PageInfo} />
         </div>
       </Router>
     );
