@@ -55,11 +55,15 @@
 }
 
 .balanceHeader ul.actions li {
+  padding: 15px 0;
   float: left;
   width: 33.33%;
   text-align: center;
-  padding: 15px 0;
   border-right: 1px solid #e8e8e8;
+}
+
+.balanceHeader ul.actions li a {
+  padding: 15px 0;
 }
 
 .balanceHeader ul.actions li:last-child {
@@ -67,7 +71,7 @@
 }
 
 .actions span {
-  color:  #fff;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,6 +1,7 @@
 .depositForm {
-  padding-top: 100px;
-  width: 400px;
+  padding: 40px 15px;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }

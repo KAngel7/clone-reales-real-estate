@@ -113,3 +113,8 @@ ol, ul {
 .invisible {
   visibility: hidden;
 }
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
