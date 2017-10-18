@@ -1,0 +1,65 @@
+.newPropertyForm{
+  max-width: 900px;
+  margin:0 auto;
+  padding: 20px 30px;
+}
+
+.newPropertyForm .file-input {
+  border: 1px solid #dfdfdf;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.newPropertyForm .file-input .file-preview {
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: none;
+}
+
+.newPropertyForm .btn-o {
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+.newPropertyForm .btn {
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.newPropertyForm .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.newPropertyForm .btn-file:hover{
+  background-color: #ACACAC;
+  color:white;
+}
+
+.newPropertyForm .btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 999px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+.newPropertyForm .rowBtn{
+  text-align: center;
+}
+
+.newPropertyForm .amenities *{
+  padding-left: 0;
+}
