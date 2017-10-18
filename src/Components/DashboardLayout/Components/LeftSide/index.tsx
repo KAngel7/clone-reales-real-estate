@@ -16,7 +16,7 @@ class LeftSide extends React.Component<LeftSideProps, {}> {
   }
   render() {
     return (
-      <div className={`leftSide${this.props.isExpand ? ' expanded' : ''}`}>
+      <div className={`leftSide${this.props.isExpand ? ' expanded' : ' minimized'}`}>
         <nav className="leftNav scrollable bigNav">
           <ul>
             <li><Link to="/search">

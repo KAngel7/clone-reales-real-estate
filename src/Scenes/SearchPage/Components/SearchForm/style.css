@@ -1,0 +1,68 @@
+.searchForm {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 30px;
+  max-width: 1400px;
+}
+
+.volume {
+  width: 100%;
+}
+
+.volume a, .volume input {
+  float: left;
+}
+
+.volume a.btn {
+  background-color: #fff;
+  width: 30%;
+  height: 37px;
+  padding: 10px 3%;
+  color: #999;
+  border: 1px solid #dfdfdf;
+}
+
+.no-touch .volume a.btn:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #999;
+}
+
+.volume a.btn.btn-round-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.volume a.btn.btn-round-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.volume input.form-control, .volume input.form-control[readonly] {
+  width: 40%;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0 none;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-left: 0 none;
+  border-right: 0 none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+}
+
+.resultsList {
+  padding: 20px 20px 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .searchForm {
+    padding: 15px 5px;
+  }
+}

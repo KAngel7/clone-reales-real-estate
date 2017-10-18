@@ -27,28 +27,16 @@
 
 .leftNav ul li {
   position: relative;
-  width: 70px;
-}
-
-.expanded .leftNav ul li {
-  width: 200px;
 }
 
 .leftNav ul li a {
   display: block;
   font-size: 16px;
   color: #adc8c7;
-  width: 70px;
+  width: 100%;
   height: 60px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
   text-decoration: none;
-}
-
-.expanded .leftNav ul li a {
-  width: 200px;
-  height: auto;
-  padding: 10px 20px;
 }
 
 .leftNav ul li a span {
@@ -57,15 +45,7 @@
   display: block;
   text-align: center;
   z-index: 110;
-  transition: all .2s ease-in-out;
   text-decoration: none;
-}
-
-.expanded .leftNav ul li a span {
-  position: relative;
-  width: auto;
-  display: inline-block;
-  text-align: left;
 }
 
 .leftNav ul li:hover a, .leftNav ul li.onTap a {
@@ -87,20 +67,10 @@
   top: 22px;
 }
 
-.expanded .leftNav span.navIcon {
-  top: auto;
-  margin-right: 10px;
-}
-
 .leftNav span.navLabel {
   font-size: 11px;
   bottom: 10px;
   left: -70px;
-}
-
-.expanded .leftNav span.navLabel {
-  bottom: 2px;
-  left: 0;
 }
 
 .leftNav ul li:hover a span.navIcon, .leftNav ul li.onTap a span.navIcon {
@@ -108,14 +78,33 @@
   text-decoration: none;
 }
 
+.expanded .leftNav ul li a {
+  transition: none;
+}
+
 .expanded .leftNav ul li:hover a span.navIcon, .expanded .leftNav ul li.onTap a span.navIcon {
-  top: auto;
+  top: 22px;
   text-decoration: none;
 }
 
+.expanded .leftNav ul li a span.navLabel {
+  position: absolute;
+  left: 60px;
+  bottom: inherit;
+  top: 20px;
+  font-size: 14px;
+  width: 200px;
+  text-align: left;
+  transition: none;
+}
+
 .leftNav ul li:hover a span.navLabel, .leftNav li.onTap span.navLabel {
+  transition: all .2s ease-in-out;
   left: 0;
-  text-decoration: none;
+}
+
+.expanded .leftNav ul li:hover a span.navLabel, .expanded .leftNav li.onTap span.navLabel {
+  left: 60px;
 }
 
 .leftNav span.arrowRight {
@@ -124,9 +113,8 @@
 
 .expanded .leftNav span.arrowRight {
   display: inline-block;
-  float: right;
-  font-size: 12px;
-  margin-top: 5px;
+  right: 0;
+  top: 22px;
 }
 
 .leftNav span.badge {
@@ -143,31 +131,8 @@
   min-width: 14px;
 }
 
-.expanded .leftNav span.badge {
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 11px;
-  line-height: 1;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 10px;
-  float: right;
-  top: auto;
-  left: auto;
-  position: relative;
-  margin-top: 2px;
-}
-
-.expanded .leftNav > ul > li.hasSub > a > span.badge {
-  display: none;
-}
-
 .leftNav > ul > li:hover > a > span.badge {
   top: 8px;
-}
-
-.expanded .leftNav > ul > li:hover > a > span.badge {
-  top: auto;
 }
 
 .leftNav ul.secondUl {
