@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
-import Dashboard from '../../Components/DashboardLayout';
-import SingelHouse from '../../Components/SingleHouse';
+import Dashboard from 'Components/DashboardLayout';
+import SingelHouse from 'Components/SingleHouse';
 
 const houseData = {
   name: 'Modern Residence in New York',

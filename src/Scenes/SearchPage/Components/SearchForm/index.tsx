@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
-import SelectComponent from '../../../../Components/SelectComponent';
-import SingelHouse from '../../../../Components/SingleHouse';
+import SelectComponent from 'Components/SelectComponent';
+import SingelHouse from 'Components/SingleHouse';
 const houseData: any[] = [{
   name: 'Modern Residence in New York',
   address: ' 39 Remsen St, Brooklyn, NY 11201, USA',

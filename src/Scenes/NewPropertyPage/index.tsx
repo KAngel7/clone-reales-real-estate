@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-import Dashboard from '../../Components/DashboardLayout';
+import Dashboard from 'Components/DashboardLayout';
 import AddNewPropertyForm from './Components/AddNewPropertyForm';
 import { RouteComponentProps } from 'react-router-dom';
 

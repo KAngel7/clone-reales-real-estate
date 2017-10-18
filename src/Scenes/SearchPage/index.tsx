@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
-import Dashboard from '../../Components/DashboardLayout';
+import Dashboard from 'Components/DashboardLayout';
 import SearchForm from './Components/SearchForm';
 
 class SearchPage extends React.Component<RouteComponentProps<any>, {}> {

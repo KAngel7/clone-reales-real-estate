@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './style.css';
 import { Icon } from 'react-fa';
-import RLForm from '../../../RegisterLoginForm';
-import UserMenu from '../../../UserMenu';
+import RLForm from 'Components/RegisterLoginForm';
+import UserMenu from 'Components/UserMenu';
 import { Link } from 'react-router-dom';
 
 interface MenuBarProps {
@@ -73,7 +73,7 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
             <li className="moreOption"><a href="#">Rent</a></li>
             <li className="moreOption"><a href="#">Find agent</a></li>
             {this.loginField()}
-            <li><Link to="/search"><div className="btn btn-green">List a Property</div></Link></li>
+            <li><Link to="/newproperty"><div className="btn btn-green">List a Property</div></Link></li>
           </ul>
         </div>
         <RLForm 

@@ -1,9 +1,7 @@
 import * as React from 'react';
 import './style.css';
-
 import { Icon } from 'react-fa';
-
-import SelectComponent from '../../../SelectComponent';
+import SelectComponent from 'Components/SelectComponent';
 
 interface SearchBarProps {
 

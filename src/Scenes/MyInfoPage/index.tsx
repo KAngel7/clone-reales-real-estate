@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-import Dashboard from '../../Components/DashboardLayout';
+import Dashboard from 'Components/DashboardLayout';
 import MyInfoForm from './Components/MyInfoForm';
 import { RouteComponentProps } from 'react-router-dom';
 

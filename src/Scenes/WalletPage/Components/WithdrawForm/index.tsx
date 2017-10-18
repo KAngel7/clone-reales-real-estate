@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-import SelectComponent from '../../../../Components/SelectComponent';
+import SelectComponent from 'Components/SelectComponent';
 
 class WithdrawForm extends React.Component<{}, {}> {
   types = [

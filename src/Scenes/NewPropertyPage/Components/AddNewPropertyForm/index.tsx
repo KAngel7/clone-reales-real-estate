@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './style.css';
 import { Icon } from 'react-fa';
-import SelectComponent from '../../../../Components/SelectComponent';
-import CheckBox from '../../../../Components/CheckBox';
+import SelectComponent from 'Components/SelectComponent';
+import CheckBox from 'Components/CheckBox';
 
 class AddNewPropertyForm extends React.Component<{}, {}> {
   types = [

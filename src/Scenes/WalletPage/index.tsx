@@ -5,7 +5,7 @@ import MyWallet from './Components/MyWallet';
 import DepositForm from './Components/DepositForm';
 import WithdrawForm from './Components/WithdrawForm';
 import RequestForm from './Components/RequestForm';
-import Dashboard from '../../Components/DashboardLayout';
+import Dashboard from 'Components/DashboardLayout';
 
 class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
   WalletPageSection: {

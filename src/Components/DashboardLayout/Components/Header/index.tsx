@@ -3,7 +3,7 @@ import './style.css';
 
 import { Icon } from 'react-fa';
 
-import UserMenu from '../../../../Components/UserMenu';
+import UserMenu from 'Components/UserMenu';
 import NotifyMenu from './Components/NotifyMenu';
 import SearchForm from './Components/SearchForm';
 

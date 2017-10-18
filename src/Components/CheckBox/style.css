@@ -6,19 +6,19 @@
   margin-bottom: 10px;
 }
 
-.checkbox.custom-checkbox label{
+.checkbox.custom-checkbox label {
   padding-left: 0;
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
 }
 
-.checkbox.custom-checkbox input[type="checkbox"]{
+.checkbox.custom-checkbox input[type="checkbox"] {
   position: absolute;
   left: -9999em;
 }
 
-.checkbox.custom-checkbox span{
+.checkbox.custom-checkbox span {
   background-color: #fff;
   border: 1px solid #999;
   font-size: 10px;
@@ -31,14 +31,14 @@
   transition: all .2s ease-in-out;
 }
 
-@media (min-width: 768px){
-.checkbox {
+@media (min-width: 768px) {
+  .checkbox {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
-}
-.form-inline .checkbox input[type="checkbox"]{
-  margin-left: 0;
-}
+  }
+  .form-inline .checkbox input[type="checkbox"] {
+    margin-left: 0;
+  }
 }
