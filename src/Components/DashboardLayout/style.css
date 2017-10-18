@@ -16,10 +16,11 @@
   position: relative;
 }
 
-.contentWrapper {
+.dashboard .contentWrapper {
   margin-left: 70px;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -29,7 +30,7 @@
   .dashboard .bodyWrapper {
     height: calc(100vh - 50px);
   }
-  .contentWrapper {
+  .dashboard .contentWrapper {
     margin-left: 0px;
   }
 }
