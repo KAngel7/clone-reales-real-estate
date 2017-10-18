@@ -16,6 +16,20 @@ const houseData: any[] = [{
   toilets: 2,
   square: 20,
   img: 'http://mariusn.com/themes/reales/images/prop/2-1.png'
+}, {
+  name: 'Modern Residence in New York',
+  address: ' 39 Remsen St, Brooklyn, NY 11201, USA',
+  beds: 3,
+  toilets: 2,
+  square: 20,
+  img: 'http://mariusn.com/themes/reales/images/prop/1-1.png'
+}, {
+  name: 'Hauntingly Beautiful Estate',
+  address: ' 169 Warren St, Brooklyn, NY 11201, USA',
+  beds: 3,
+  toilets: 2,
+  square: 20,
+  img: 'http://mariusn.com/themes/reales/images/prop/2-1.png'
 }];
 
 class SearchForm extends React.Component<{}, {}> {
