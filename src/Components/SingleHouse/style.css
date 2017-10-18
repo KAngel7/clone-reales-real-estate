@@ -1,0 +1,203 @@
+a.card, div.card {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.figure {
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+
+.figure img {
+  transition: transform 0.35s;
+  transform: scale(1.15);
+}
+
+a.card:hover img, div.card:hover img {
+  transform: scale(1);
+  opacity: 0.8;
+}
+
+.figCaption {
+  position: absolute;
+  z-index: 2;
+  top: auto;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000', GradientType=0);
+}
+
+.figCaption {
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+.figView {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  margin-left: -21px;
+  margin-top: -20px;
+  font-weight: normal;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(3.0);
+}
+
+a.card:hover .figView, div.card:hover .figView {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.figCaption div {
+  float: left;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+}
+
+.carousel-col .figCaption div {
+  float: left;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.figCaption > span {
+  float: right;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.carousel-col .figCaption > span {
+  display: none;
+}
+
+.figCaption > span::before {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.figCaption div, .figCaption > span {
+  transition: transform 0.35s;
+  transform: translate3d(0, 200%, 0);
+}
+
+.figCaption div {
+  display: inline-block;
+}
+
+a.card:hover .figure .figCaption, a.card:hover .figure .figCaption div, a.card:hover .figure .figCaption > span, div.card:hover .figure .figCaption, div.card:hover .figure .figCaption div, div.card:hover .figure .figCaption > span {
+  transform: translate3d(0, 0, 0);
+}
+
+a.card:hover .figure .figCaption div, div.card:hover .figure .figCaption div {
+  transition-delay: 0.05s;
+}
+
+a.card:hover .figure .figCaption > span:nth-child(4), div.card:hover .figure .figCaption > span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+
+a.card:hover .figure .figCaption > span:nth-child(3), div.card:hover .figure .figCaption > span:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+a.card:hover .figure .figCaption > span:nth-child(2), div.card:hover .figure .figCaption > span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.figType {
+  background-color: #eab134;
+  font-size: 10px;
+  line-height: 11px;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 2px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.carousel-col .figType {
+  top: auto;
+  left: auto;
+  right: 10px;
+  bottom: 10px;
+}
+
+a.card h2, div.card h2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 10px 0 0;
+  padding: 10px 0 3px 10px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  float: none;
+}
+
+a.card:hover, div.card:hover {
+  text-decoration: none;
+}
+
+a.card:hover h2, div.card:hover h2 {
+  color: #0eaaa6;
+  text-decoration: none;
+}
+
+a.card .cardAddress, div.card .cardAddress {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999;
+  padding: 0 0 10px 10px;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a.card .cardAddress span, div.card .cardAddress span {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+a.card ul.cardFeat, div.card ul.cardFeat {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+a.card ul.cardFeat li, div.card ul.cardFeat li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 11px;
+  line-height: 11px;
+  color: #333;
+}
+a.card ul.cardFeat li span, div.card ul.cardFeat li span {
+  color: #999;
+}

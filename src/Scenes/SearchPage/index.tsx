@@ -2,6 +2,7 @@ import * as React from 'react';
 import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
 import Dashboard from '../../Components/DashboardLayout';
+import SearchForm from './Components/SearchForm';
 
 class SearchPage extends React.Component<RouteComponentProps<any>, {}> {
   render() {
@@ -9,7 +10,10 @@ class SearchPage extends React.Component<RouteComponentProps<any>, {}> {
       <div className="searchPage">
         <Dashboard>
           <div className="dashboardTitle">
-            <h3>Search page</h3>
+            <h3>Filter your result</h3>
+          </div>
+          <div className="searchFormWrapper">
+            <SearchForm />
           </div>
         </Dashboard>
       </div>
