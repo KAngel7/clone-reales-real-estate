@@ -63,3 +63,9 @@
 .newPropertyForm .amenities *{
   padding-left: 0;
 }
+
+@media screen and (max-width: 767px){
+.newPropertyForm {
+    padding: 10px 15px;
+}
+}

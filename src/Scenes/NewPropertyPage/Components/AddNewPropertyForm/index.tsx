@@ -28,7 +28,7 @@ class AddNewPropertyForm extends React.Component<{}, {}> {
         <div className="row form-group">
           <div className="discription col-xs-12 col-sm-12 col-md-12">
             <h4>Description</h4>
-            <textarea className="form-control"></textarea>
+            <textarea className="form-control" />
           </div>
         </div>
         <div className="row form-group">
@@ -107,7 +107,7 @@ class AddNewPropertyForm extends React.Component<{}, {}> {
           </div>
         </div>
         <div className="row form-group rowBtn">
-          <input type="text" name="" id="" className="btn btn-green btn-lg" value="Add Property"/>
+          <input type="text"  className="btn btn-green btn-lg" defaultValue="Add Property"/>
         </div>
       </div>
     );
