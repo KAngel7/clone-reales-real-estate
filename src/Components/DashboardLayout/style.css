@@ -21,6 +21,7 @@
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {

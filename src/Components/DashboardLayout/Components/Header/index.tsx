@@ -37,7 +37,6 @@ class Header extends React.Component<HeaderProps, Header2State> {
           <UserMenu />
         </div>
         <NotifyMenu />
-        <a href="#" className="mapHandler"><Icon name="map-o" /></a>
         <div className="clearfix" />
       </div>
     );

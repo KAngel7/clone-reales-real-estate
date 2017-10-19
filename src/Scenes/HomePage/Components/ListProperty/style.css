@@ -1,0 +1,16 @@
+.listProperty .listPropertyHeader{
+  text-align: center;
+  background-color: #00A9A4;
+  padding: 20px;
+  color:white;
+}
+
+.listProperty .listPropertyHeader h3{
+  margin:0;
+}
+
+.listProperty .listPropertyContent{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding:30px 50px 20px 50px;
+}

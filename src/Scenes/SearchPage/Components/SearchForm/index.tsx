@@ -2,6 +2,9 @@ import * as React from 'react';
 import './style.css';
 import SelectComponent from 'Components/SelectComponent';
 import SingelHouse from 'Components/SingleHouse';
+import SearchMap from '../SearchMap';
+import { Icon } from 'react-fa';
+
 const houseData: any[] = [{
   name: 'Modern Residence in New York',
   address: ' 39 Remsen St, Brooklyn, NY 11201, USA',
@@ -32,8 +35,25 @@ const houseData: any[] = [{
   img: 'http://mariusn.com/themes/reales/images/prop/2-1.png'
 }];
 
-class SearchForm extends React.Component<{}, {}> {
-  result = () => {
+interface SearchFormState {
+  resultTab: 'list' | 'map';
+}
+
+class SearchForm extends React.Component<{}, SearchFormState> {
+  constructor() {
+    super();
+    this.state = {
+      resultTab: 'list'
+    };
+  }
+  changeResultTab = (tab: 'list' | 'map') => {
+    if (tab !== this.state.resultTab) {
+      this.setState({
+        resultTab: tab
+      });
+    }
+  }
+  resultList = () => {
     return (
       <div className="resultsList">
         <div className="row">
@@ -45,6 +65,13 @@ class SearchForm extends React.Component<{}, {}> {
             );
           })}
         </div>
+      </div>
+    );
+  }
+  resultMap = () => {
+    return (
+      <div className="resultsMap">
+        <SearchMap />
       </div>
     );
   }
@@ -66,11 +93,11 @@ class SearchForm extends React.Component<{}, {}> {
                 <label>Bedrooms</label>
                 <div className="volume">
                   <a href="#" className="btn btn-gray btn-round-left">
-                    <span className="fa fa-angle-left" />
+                    <Icon name="angle-left" />
                   </a>
                   <input type="text" className="form-control" readOnly={true} value="1" />
                   <a href="#" className="btn btn-gray btn-round-right">
-                    <span className="fa fa-angle-right" />
+                    <Icon name="angle-right" />
                   </a>
                 </div>
               </div>
@@ -79,16 +106,34 @@ class SearchForm extends React.Component<{}, {}> {
               <div className="formField">
                 <label>Bathrooms</label>
                 <div className="volume">
-                  <a href="#" className="btn btn-gray btn-round-left"><span className="fa fa-angle-left" /></a>
+                  <a href="#" className="btn btn-gray btn-round-left"><Icon name="angle-left" /></a>
                   <input type="text" className="form-control" readOnly={true} value="1" />
-                  <a href="#" className="btn btn-gray btn-round-right"><span className="fa fa-angle-right" /></a>
+                  <a href="#" className="btn btn-gray btn-round-right"><Icon name="angle-right" /></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="resultTable">
-          {this.result()}
+          <div className="resultTab">
+            <ul>
+              <li 
+                className={this.state.resultTab === 'list' ? 'active' : ''}
+                onClick={(e) => this.changeResultTab('list')}
+              >
+                <a><Icon name="th-list" /> Listing view</a>
+              </li>
+              <li
+                className={this.state.resultTab === 'map' ? 'active' : ''}
+                onClick={(e) => this.changeResultTab('map')}
+              >
+                <a><Icon name="map-o" /> Map view</a>
+              </li>
+            </ul>
+          </div>
+          <div className="resultBody">
+            {this.state.resultTab === 'list' ? this.resultList() : this.resultMap()}
+          </div>
         </div>
       </div>
     );

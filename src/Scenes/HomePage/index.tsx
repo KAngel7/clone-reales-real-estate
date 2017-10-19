@@ -3,6 +3,7 @@ import './style.css';
 import { RouteComponentProps } from 'react-router-dom';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import ListProperty from './Components/ListProperty';
 
 class HomePage extends React.Component<RouteComponentProps<any>, {}> {
   render() {
@@ -11,8 +12,8 @@ class HomePage extends React.Component<RouteComponentProps<any>, {}> {
         <div className="headerWrapper">
           <Header />
         </div>
-        <div className="bodyWrapper container">
-          {}
+        <div className="bodyWrapper">
+          <ListProperty />
         </div>
         <div className="footerWrapper">
           <Footer />

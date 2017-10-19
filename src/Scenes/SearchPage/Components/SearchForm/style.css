@@ -58,10 +58,42 @@
   font-size: 13px;
 }
 
-.resultsList {
-  padding: 20px 20px 0 20px;
+.resultTab {
+  margin-left: -30px;
 }
+
+.resultTab li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  margin: 0 1px;
+}
+
+.resultTab li:hover, .resultTab li.active {
+  border-color: #0eaaa6;
+  text-decoration: none;
+}
+
+.resultTab li.active a {
+  color: black;
+}
+
+.resultsMap {
+  width: 100%;
+  padding: 10px;
+  min-height: 300px;
+  height: 100vw;
+  max-height: 700px;
+}
+
 @media screen and (max-width: 767px) {
+  .resultTab ul {
+    padding-left: 10px;
+  }
+  .resultTab {
+    margin-left: -10px;
+  }
   .searchForm {
     padding: 15px 5px;
   }

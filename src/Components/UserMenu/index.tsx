@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-
+import { Link } from 'react-router-dom';
 import { Icon } from 'react-fa';
 
 interface UserMenuProps {
@@ -60,9 +60,9 @@ class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
             <div className="mobAvatarName">John Smith</div>
           </div>
           <ul>
-            <li><a href="/wallet"><span className="walletIcon fa" />Wallet</a></li>
+            <li><Link to="/wallet"><span className="walletIcon fa" />Wallet</Link></li>
             <li><a href="#"><Icon name="cog" />Settings</a></li>
-            <li><a href="/myprofile"><Icon name="user" />Profile</a></li>
+            <li><Link to="/myprofile"><Icon name="user" />Profile</Link></li>
             <li><a href="#">
               <Icon name="bell-o" />
               Notifications
