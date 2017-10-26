@@ -9,6 +9,8 @@
 
 .leftSide.expanded {
   width: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .closeLeftSide {
@@ -256,5 +258,21 @@
   }
   .expanded .leftNav > ul > li > ul {
     width: 100%;
+  }
+  .leftNav ul li a {
+    height: 40px;
+  }
+  .expanded .leftNav span.arrowRight {
+    top: 12px;
+  }
+  .expanded .leftNav ul li a span.navLabel {
+    top: 12px;
+    font-size: 12px;
+  }
+  .expanded .leftNav ul li:hover a span.navIcon, .expanded .leftNav ul li.onTap a span.navIcon {
+    top: 11px;
+  }
+  .leftNav ul li a span.navIcon {
+    top: 11px;
   }
 }

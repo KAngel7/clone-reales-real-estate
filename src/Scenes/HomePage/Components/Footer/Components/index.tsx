@@ -34,7 +34,7 @@ class FooterContainer extends React.Component<{}, {}> {
             <Subscribe>Subscribe to Our Newsletter</Subscribe>
         </div>
         <div className="footerCopyRight">
-          Real estate web application<br/> © 2014
+        FamiCare Company<br/> © Copy right FamiCare technology Co
         </div>
       </div>
     );

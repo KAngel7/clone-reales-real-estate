@@ -1,3 +1,6 @@
+.singleHouse {
+  overflow: hidden;
+}
 a.card, div.card {
   display: block;
   background-color: #fff;

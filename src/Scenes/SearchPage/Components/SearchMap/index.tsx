@@ -1,19 +1,34 @@
 import * as React from 'react';
 import './style.css';
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact, { Coords } from 'google-map-react';
 import MiniHouse from './Components/MiniHouse';
 
-class SearchMap extends React.Component<{}, {}> {
-  defaultProps = {
-    center: {lat: 10.766748, lng: 106.705785},
-    zoom: 15
-  };
+interface SearchMapState {
+  center: Coords;
+  zoom: number;
+}
+
+class SearchMap extends React.Component<{}, SearchMapState> {
+  constructor() {
+    super();
+    this.state = {
+      center: {lat: 10.766748, lng: 106.705785},
+      zoom: 15
+    };
+  }
+  onMapChange = (newMapState: SearchMapState) => {
+    this.setState(newMapState);
+  }
   render() {
     return (
       <div className="searchMap">
         <GoogleMapReact
-          defaultCenter={this.defaultProps.center}
-          defaultZoom={this.defaultProps.zoom}
+          center={this.state.center}
+          zoom={this.state.zoom}
+          onChange={this.onMapChange}
+          bootstrapURLKeys={{
+            key: 'AIzaSyBuinFicS4HAGfIKW6rRutGFP9GWcReUn4'
+          }}
         >
           <MiniHouse lat={10.766748} lng={106.705785} />
         </GoogleMapReact>

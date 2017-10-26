@@ -3,6 +3,7 @@ import './style.css';
 import MenuBar from './Components/MenuBar';
 import SlideShow from './Components/SlideShow';
 import SearchBar from './Components/SearchBar';
+import Caption from './Components/Caption';
 
 class Header extends React.Component<{}, {}> {
 
@@ -12,14 +13,10 @@ class Header extends React.Component<{}, {}> {
         <div className="slideShowBarWrapper">
           <SlideShow />
         </div>
-        <div className="menuBarWrapper">
+        <div className="menuBarWrapper"> 
           <MenuBar />
         </div>
-        <div className="homeCaption">
-          <div className="homeTitle">Now it's easy to find your future home</div>
-          <div className="homeSubtitle">With Reales - Real Estate HTML Template</div>
-          <a href="#" className="btn btn-black">Learn More</a>
-        </div>
+        <Caption />
         <div className="selectBarWrapper">
           <SearchBar />
         </div>

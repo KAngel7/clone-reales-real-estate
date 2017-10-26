@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './style.css';
 import { Icon } from 'react-fa';
+import { login, LoginData } from 'Services/Api/User';
 
 interface LoginFormProps {
   active: boolean;
@@ -22,11 +23,16 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
       password: ''
     };
   }
-  signIn = (method?: 'fb' | 'gg') => {
-    /* Test code */
-    localStorage.setItem('loginStatus', 'true');
-    window.location.href = '/';
-    /* End test code */
+  signIn = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const loginData: LoginData = {
+      userName: this.state.email,
+      password: this.state.password
+    };
+    login(loginData).then((responseData) => {
+      // tslint:disable-next-line:no-console
+      console.log(responseData);
+    });
   }
   toggleRemember = (e: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({
@@ -54,10 +60,10 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
               <h4 className="modal-title">Sign In</h4>
             </div>
             <div className="modal-body">
-              <form role="form">
+              <form role="loginForm form" onSubmit={this.signIn}>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <div className="btn btn-lg btn-facebook" onClick={(e) => this.signIn('fb')}>
+                    <div className="btn btn-lg btn-facebook">
                       <Icon name="facebook" className="pull-left" />
                       <span>Sign In with Facebook</span>
                     </div>
@@ -65,7 +71,7 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <div className="btn btn-lg btn-google" onClick={(e) => this.signIn('gg')}>
+                    <div className="btn btn-lg btn-google">
                       <Icon name="google" className="pull-left" />
                       <span>Sign In with Google</span>
                     </div>
@@ -110,9 +116,9 @@ class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
                 </div>
                 <div className="form-group">
                   <div className="btn-group-justified">
-                    <div className="btn btn-lg btn-green isThemeBtn btn-red" onClick={(e) => this.signIn()}>
+                    <button type="submit" className="btn btn-lg btn-green isThemeBtn btn-red">
                       Sign In
-                    </div>
+                    </button>
                   </div>
                 </div>
                 <p className="help-block">

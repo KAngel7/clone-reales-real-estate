@@ -1,6 +1,6 @@
-.newPropertyForm{
+.newPropertyForm {
   max-width: 900px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 20px 30px;
 }
 
@@ -25,20 +25,14 @@
   border-style: solid;
 }
 
-
-.newPropertyForm .btn {
-  border-radius: 2px;
-  text-decoration: none;
-}
-
 .newPropertyForm .btn-file {
   position: relative;
   overflow: hidden;
 }
 
-.newPropertyForm .btn-file:hover{
+.newPropertyForm .btn-file:hover {
   background-color: #ACACAC;
-  color:white;
+  color: white;
 }
 
 .newPropertyForm .btn-file input[type=file] {
@@ -56,16 +50,24 @@
   display: block;
 }
 
-.newPropertyForm .rowBtn{
+textarea.description {
+  min-width: 50%;
+}
+
+.newPropertyForm .rowBtn {
   text-align: center;
 }
 
-.newPropertyForm .amenities *{
+.newPropertyForm .amenities * {
   padding-left: 0;
 }
 
-@media screen and (max-width: 767px){
-.newPropertyForm {
-    padding: 10px 15px;
+.agent .agentItems{
+  padding-left: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .newPropertyForm {
+    padding: 10px 15px;
+  }
 }

@@ -12,24 +12,35 @@ interface UserMenuState {
 }
 
 class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
+  wrapperRef: HTMLDivElement | null;
   constructor(props: UserMenuProps) {
     super(props);
     this.state = {
       showMenu: false
     };
   }
-  showUserMenu = () => {
+  showToggle = () => {
+    if (this.state.showMenu) {
+      document.removeEventListener('click', this.handleClickOutside);
+    } else {
+      document.addEventListener('click', this.handleClickOutside);
+    }
     this.setState({
       showMenu: !this.state.showMenu
     });
-    document.addEventListener('click', this.hideMenu);
+    
   }
-
-  hideMenu = () => {
-    this.setState({
-      showMenu: false
-    });
-    document.removeEventListener('click', this.hideMenu);
+  handleClickOutside = (e: MouseEvent) => {
+    if (
+      this.wrapperRef &&
+      !this.wrapperRef.contains(e.target as Node) &&
+      this.state.showMenu
+    ) {
+      this.showToggle();
+    }
+  }
+  componentWillUnmount() {
+    document.removeEventListener('click', this.handleClickOutside);
   }
   logout = () => {
     /* Test code */
@@ -39,7 +50,11 @@ class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
   }
   render() {
     return (
-      <div className={`userMenuContainer${this.state.showMenu ? ' open' : ''}`} onClick={this.showUserMenu}>
+      <div 
+        className={`userMenuContainer${this.state.showMenu ? ' open' : ''}`} 
+        onClick={this.showToggle}
+        ref={(div) => {this.wrapperRef = div; }}
+      >
         <a href="#" className="userHandler dropdown-toggle" data-toggle="dropdown">
           <Icon name="user-o" /><span className="counter">5</span></a>
         <a href="#" className="headerUser dropdown-toggle" data-toggle="dropdown">

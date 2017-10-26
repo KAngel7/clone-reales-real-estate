@@ -1,12 +1,8 @@
 import * as React from 'react';
 import './style.css';
-import { Coords } from 'google-map-react';
+import { ChildComponentProps } from 'google-map-react';
 
-interface MiniHouseProps extends Coords {
-
-}
-
-class MiniHouse extends React.Component<MiniHouseProps, {}> {
+class MiniHouse extends React.Component<ChildComponentProps, {}> {
   render() {
     return (
       <div className="miniHouse">

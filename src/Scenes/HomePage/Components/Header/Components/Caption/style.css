@@ -1,0 +1,51 @@
+.homeTitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.homeSubtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.homeCaption {
+  position: absolute;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  top: calc(50vh - 150px);
+  left: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .homeTitle {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeTitle {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .homeCaption {
+    top: calc(50vh - 100px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeTitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .homeSubtitle {
+    font-size: 12px;
+  }
+}

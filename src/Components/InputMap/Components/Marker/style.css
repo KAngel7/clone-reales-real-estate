@@ -1,0 +1,33 @@
+.markerWrapper {
+  position: relative;
+  width: 1px;
+  height: 1px;
+}
+.markerWrapper .markerIcon {
+  position: absolute;
+  bottom: 0px;
+  left: -17px;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  transition: transform 0.25s cubic-bezier(0.485, 1.65, 0.545, 0.835);
+  transform-origin: 15px 60px 0px;
+  z-index: 6500;
+  background: url('./imgs/marker.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.markerWrapper .markerArrow {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  left: -9px;
+  background: url('./imgs/arrows.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.markerWrapper.hover .markerArrow{
+  opacity: 1;
+}

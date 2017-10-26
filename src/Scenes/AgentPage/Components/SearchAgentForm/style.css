@@ -1,0 +1,60 @@
+.searchAgentForm{
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 30px;
+  max-width: 1400px;
+}
+
+.searchAgentForm .searchForm{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.searchAgentForm .agentsResult{
+  padding: 0;
+}
+
+.searchAgentForm .resultTab{
+  margin-left: 0 !important;
+}
+
+.searchAgentForm .resultTab ul{
+  padding: 0;
+}
+
+.searchAgentForm .resultTab ul li{
+  padding-left: 0;
+}
+
+.resultTab li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  margin: 0 1px;
+}
+
+.resultTab li:hover, .resultTab li.active {
+  border-color: #0eaaa6;
+  text-decoration: none;
+}
+
+.resultTab li.active a {
+  color: black;
+}
+
+
+@media screen and (max-width: 767px) {
+  .resultTab ul {
+    padding-left: 10px;
+  }
+  .resultTab {
+    margin-left: -10px;
+  }
+  .searchAgentForm{
+    padding: 10px 15px;
+  }
+  .searchAgentForm .searchForm{
+    width: 100%;
+  }
+}

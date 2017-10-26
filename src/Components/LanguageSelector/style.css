@@ -1,0 +1,49 @@
+.languageSelector li {
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  margin: 0 1px;
+}
+
+.languageSelector .langText {
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.languageSelector .flag {
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  margin: 0 3px;
+  position: relative;
+}
+
+.languageSelector .flag:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  background-color: #000;
+}
+
+.languageSelector li.active .flag:before {
+  opacity: 0;
+}
+
+.languageSelector ul {
+  padding-top: 1px;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.flag.uk {
+  background: url('./imgs/uk.png') 0 -3px no-repeat;
+}
+
+.flag.vn {
+  background: url('./imgs/vn.png') 0 -3px no-repeat;
+}

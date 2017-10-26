@@ -3,7 +3,15 @@
 /***********************************/
 
 const enum StatusActionType {
-  REHYDRATE = 'persist/REHYDRATE'
+  REHYDRATE = 'persist/REHYDRATE',
+  LANGUAGE_CHANGE = 'LANGUAGE_CHANGE'
+}
+
+export function changeLanguage(lang: 'en' | 'vn') {
+  return {
+    type: StatusActionType.LANGUAGE_CHANGE,
+    payload: lang
+  };
 }
 
 /***********************************/
@@ -12,7 +20,7 @@ const enum StatusActionType {
 
 export interface StatusState {
   isPersist: boolean;
-  isLogin?: boolean;
+  lang: 'en' | 'vn';
 }
 
 interface StatusAction {
@@ -20,14 +28,19 @@ interface StatusAction {
   payload: any;
 }
 
-const initStatus: StatusState = {
-  isPersist: false
+export const initStatusState: StatusState = {
+  isPersist: false,
+  lang: 'en'
 };
 
-const statusReducer = (state: StatusState = initStatus, action: StatusAction) => {
+const statusReducer = (state: StatusState = initStatusState, action: StatusAction) => {
   switch (action.type) {
     case StatusActionType.REHYDRATE: {
-      return { ...state, isPersist: true };
+      const storageStatus = action.payload.status || initStatusState;
+      return { ...storageStatus, isPersist: true };
+    }
+    case StatusActionType.LANGUAGE_CHANGE: {
+      return { ...state, lang: action.payload };
     }
     default: return state;
   }

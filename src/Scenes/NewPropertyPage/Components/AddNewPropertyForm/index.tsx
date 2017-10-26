@@ -3,6 +3,8 @@ import './style.css';
 import { Icon } from 'react-fa';
 import SelectComponent from 'Components/SelectComponent';
 import CheckBox from 'Components/CheckBox';
+import InputMap from '../../../../Components/InputMap';
+import RadioButton from '../RadioButton';
 
 class AddNewPropertyForm extends React.Component<{}, {}> {
   types = [
@@ -28,13 +30,13 @@ class AddNewPropertyForm extends React.Component<{}, {}> {
         <div className="row form-group">
           <div className="discription col-xs-12 col-sm-12 col-md-12">
             <h4>Description</h4>
-            <textarea className="form-control" />
+            <textarea className="description form-control" />
           </div>
         </div>
         <div className="row form-group">
           <div className="address col-xs-12 col-sm-12 col-md-12">
             <h4>Address</h4>
-            <input type="text" name="" id="" className="form-control" placeholder="Enter a Location" />
+            <InputMap />
           </div>
         </div>
         <div className="row form-group">
@@ -106,8 +108,19 @@ class AddNewPropertyForm extends React.Component<{}, {}> {
             </div>
           </div>
         </div>
+        <div className="row form-group">
+          <div className="agent col-xs-12 col-sm-12 col-md-12">
+            <h4>Agents</h4>
+            <div className="agentItems col-xs-6 col-sm-6 col-md-6">
+              <RadioButton>No Agent</RadioButton>
+            </div>
+            <div className="agentItems col-xs-6 col-sm-6 col-md-6">
+              <RadioButton>Find Agent</RadioButton>
+            </div>
+          </div>
+        </div>
         <div className="row form-group rowBtn">
-          <input type="text"  className="btn btn-green btn-lg" defaultValue="Add Property"/>
+          <input type="submit" className="btn btn-green btn-lg" defaultValue="Add Property" />
         </div>
       </div>
     );

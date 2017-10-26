@@ -77,6 +77,19 @@ a.homeNavHandler.active {
   top: calc(100% + 10px);
 }
 
+.langSelectorWrapper {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .homeNav > ul > li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .homeNav .dropdown-menu.pull-right {
     right: 0;

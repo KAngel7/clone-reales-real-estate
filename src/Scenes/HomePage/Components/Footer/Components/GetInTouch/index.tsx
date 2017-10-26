@@ -10,11 +10,11 @@ class GetInTouch extends React.Component<{}, {}> {
           {this.props.children}
         </div>
         <ul className="mainList">
-          <li className="footer-phone"><span className="fa fa-phone"/> 800 234 67 89</li>
+          <li className="footer-phone"><span className="fa fa-phone"/> 0962 573 550</li>
           <li className="footer-address osLight">
-            <p>516 Green St</p>
-            <p>San Francisco, CA 94133</p>
-            <p>United States</p>
+            <p>15 Doan Nhu Hai ,</p>
+            <p>District 4 ,</p>
+            <p>Ho Chi Minh</p>
           </li>
           <li>
           <a href="#" className="btn btn-sm btn-icon btn-round btn-o btn-white">

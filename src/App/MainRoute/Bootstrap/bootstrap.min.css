@@ -2786,7 +2786,7 @@ tbody.collapse.in {
 .btn-group-justified > .btn, .btn-group-justified > .btn-group {
   display: table-cell;
   float: none;
-  width: 1%;
+  width: 100%;
 }
 
 .btn-group-justified > .btn-group .btn {

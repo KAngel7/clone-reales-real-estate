@@ -118,3 +118,37 @@ ol, ul {
   display: flex;
   justify-content: space-between;
 }
+
+
+/* Loader */
+
+.loader {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+
+.loader:before {
+  content: '';
+  display: block;
+  border: 5px solid #e6e5e5;
+  border-top: 5px solid #00A9A4;
+  border-bottom: 5px solid #00A9A4;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* End loader */

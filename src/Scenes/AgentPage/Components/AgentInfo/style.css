@@ -1,0 +1,100 @@
+.agentInfoContainer{
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+  margin-bottom: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+  transition: all .2s linear 0s;
+}
+
+.agentInfoContainer:hover{
+  cursor: pointer;
+  background-color: #E7E7E7;
+}
+
+.agentInfoContainer:hover .info .name{
+  color: #0eaaa6;
+}
+
+.agentInfoContainer .avatar {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  padding: 10px;
+  float: left;
+}
+
+.agentInfoContainer .avatar > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.agentInfoContainer .info {
+  float: left;
+  padding: 18px 0;
+  max-width: 70%;
+}
+
+.agentInfoContainer .info .name {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.agentInfoContainer .info .title {
+  font-size: 12px;
+}
+
+.agentInfoContainer .info .address {
+  font-size: 11px;
+  line-height: 11px;
+  color: #999;
+  font-style: italic;
+}
+
+.agentInfoContainer .ops {
+  position: absolute;
+  z-index: 7;
+  top: 24px;
+  right: 10px;
+}
+
+.agentInfoContainer .ops > a{
+  margin-right: 5px;
+}
+
+.agentInfoContainer .btn-o.btn-magenta {
+  background-color: transparent;
+  color: #9b156e;
+  border-color: #9b156e;
+}
+
+.agentInfoContainer .btn-o.btn-magenta:hover{
+  background-color: #7e115f;
+  color: #fff;
+}
+
+.agentInfoContainer .btn-o.btn-red {
+  background-color: transparent;
+  color: #ea3d36;
+  border-color: #ea3d36;
+}
+
+.agentInfoContainer .btn-o.btn-red:hover{
+  background-color: #d22a2a;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .agentInfoContainer .avatar > img {
+    width: 50px;
+    height: 50px;
+  }
+}

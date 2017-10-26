@@ -17,7 +17,7 @@ class RequestForm extends React.Component<{}, {}> {
         <div className="dashboardTitle">
           <h3>Request Form</h3>
         </div>
-        <div className="depositForm">
+        <div className="depositForm panel panel-default">
           <form>
             <div className="input-group form-group">
               <span className="input-group-addon">Amount</span>

@@ -17,7 +17,7 @@ class DepositForm extends React.Component<{}, {}> {
         <div className="dashboardTitle">
           <h3>Deposit Form</h3>
         </div>
-        <div className="depositForm dashboardBody">
+        <div className="depositForm dashboardBody panel panel-default">
           <form>
             <div className="input-group form-group">
               <span className="input-group-addon">Amount</span>

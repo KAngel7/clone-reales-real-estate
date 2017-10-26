@@ -6,6 +6,7 @@ import { Icon } from 'react-fa';
 import UserMenu from 'Components/UserMenu';
 import NotifyMenu from './Components/NotifyMenu';
 import SearchForm from './Components/SearchForm';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   clickToggle: any;
@@ -26,10 +27,10 @@ class Header extends React.Component<HeaderProps, Header2State> {
     return (
       <div className="dashboardHeader">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <Icon className="fa fa-home marker" name="home" />
             <span className="logoText">reales</span>
-          </a>
+          </Link>
         </div>
         <a href="#" className="navHandler" onClick={this.props.clickToggle}><Icon  name="bars" /></a>
         <SearchForm />

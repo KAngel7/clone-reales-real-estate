@@ -19,7 +19,7 @@ class MyhousePage extends React.Component<RouteComponentProps<any>, {}> {
       <div className="myhousePage">
         <Dashboard>
           <div className="dashboardTitle">
-            <h3>My house</h3>
+            <h3>Property ({this.props.match.params.id})</h3>
           </div>
           <div className="myHouseWrapper">
            <SingelHouse data={houseData} />

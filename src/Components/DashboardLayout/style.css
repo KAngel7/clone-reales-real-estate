@@ -1,3 +1,7 @@
+.dashboard {
+  overflow: hidden;
+}
+
 .dashboard .headerWrapper {
   height: 60px;
 }

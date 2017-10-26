@@ -2,33 +2,28 @@ import { compose, applyMiddleware, createStore, Store, StoreEnhancer, combineRed
 import thunk from 'redux-thunk';
 import promise from 'redux-promise-middleware';
 import { persistStore, autoRehydrate } from 'redux-persist';
-import user, { UserState } from '../Modules/User';
-import status, { StatusState } from '../Modules/Status';
-import storage, { StorageState } from '../Modules/Storage';
+import user, { UserState, initUserState } from '../Modules/User';
+import status, { StatusState, initStatusState } from '../Modules/Status';
 import logger from 'redux-logger';
 
-interface RootState {
+export interface RootState {
   status: StatusState;
-  user?: UserState;
-  storage?: StorageState;
+  user: UserState;
 }
 const initState: RootState = {
-  status: {
-    isPersist: false,
-    isLogin: false
-  }
+  status: initStatusState,
+  user: initUserState
 }; 
 
 const rootReducer = combineReducers<RootState>({
   user,
-  status,
-  storage
+  status
 });
 
 const hydrate: StoreEnhancer<RootState> = autoRehydrate() as StoreEnhancer<RootState>;
 const middleware: StoreEnhancer<RootState> = applyMiddleware(promise(), thunk, logger);
 const store: Store<RootState> = createStore<RootState>(rootReducer, initState, compose(middleware, hydrate));
 
-persistStore(store, { whitelist: ['storage'] } );
+persistStore(store, { whitelist: ['status'] });
 
 export default store;
