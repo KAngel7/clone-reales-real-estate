@@ -13,7 +13,14 @@ const translations = {
   en: require('./Translate/en.json'),
   vn: require('./Translate/vn.json')
 };
-export const getTranslation = (lang: 'en' | 'vn', text: string, type?: 'text' | 'date' | 'currency') => {
-  const translateText = translations[lang][text];
-  return translateText || text;
+export const enum SupportedLanguage {
+  vn = 'vn',
+  en = 'en'
+}
+export const getTranslation = (lang: SupportedLanguage, text: string, type?: 'text' | 'date' | 'currency') => {
+  var translateText = text;
+  if (translations[lang] && translations[lang][text]) {
+    translateText = translations[lang][text];
+  }
+  return translateText;
 };

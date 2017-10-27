@@ -5,7 +5,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import SearchAgentForm from './Components/SearchAgentForm';
 import MyAgent from './Components/MyAgent';
 
-class AgentPage extends React.Component<RouteComponentProps<any>, {}> {
+class AgentPage extends React.Component<RouteComponentProps<{action: string}>, {}> {
   AgentPageAction: {
     findAgent: JSX.Element;
     myAgent: JSX.Element;

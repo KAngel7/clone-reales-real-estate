@@ -4,7 +4,7 @@ import { Icon } from 'react-fa';
 import SelectComponent from 'Components/SelectComponent';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getTranslation } from 'Services/Geo';
+import { getTranslation, SupportedLanguage } from 'Services/Geo';
 
 const mapStateToProps = (state: any) => ({
   lang: state.status.lang,
@@ -12,7 +12,7 @@ const mapStateToProps = (state: any) => ({
 });
 
 interface SearchBarProps {
-  lang: 'en' | 'vn';
+  lang: SupportedLanguage;
   isPersist: boolean;
 }
 

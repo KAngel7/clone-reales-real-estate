@@ -7,7 +7,7 @@ import RentPage from './Components/Rent';
 import RenovationPage from './Components/Renovation';
 import AddNewPropertyForm from './Components/AddNewPropertyForm';
 
-class NewPropertyPage extends React.Component<RouteComponentProps<any>, {}> {
+class NewPropertyPage extends React.Component<RouteComponentProps<{action: string}>, {}> {
   newPropertyAction: {
     sell: JSX.Element;
     rent: JSX.Element;

@@ -1,10 +1,11 @@
 import * as React from 'react';
 import './style.css';
-import { RouteComponentProps } from 'react-router-dom';
 import Dashboard from 'Components/DashboardLayout';
-import NewItem from 'Scenes/NewsPage/Components/NewItem';
+import { RouteComponentProps } from 'react-router-dom';
+// import BigItem from './Components/BigItem';
+import NewItem from './Components/NewItem';
 
-class AdvicePage extends React.Component<RouteComponentProps<{type: string}>, {}> {
+class NewsPage extends React.Component<RouteComponentProps<{}>, {}> {
   listNew = [
     {
       linkImage: 'http://monstermathclub.com/wp-content/uploads/2017/02/nice-homes-great-nice-houses-on-the-beach.jpg',
@@ -37,12 +38,15 @@ class AdvicePage extends React.Component<RouteComponentProps<{type: string}>, {}
   ];
   render() {
     return (
-      <div className="advicePage">
-        <Dashboard>
-          <div className="dashboardTitle">
-            <h3>Advices ({this.props.match.params.type})</h3>
-          </div>
-          <div className="dashboardBody row">
+      <div className="newsPage">
+        <Dashboard >
+          <div className="newsWrapper">
+            <div className="dashboardTitle">
+              <h3>Projects</h3>
+              <h5>We'd love to find out more about you. It'll help us make
+                sure our website and apps tick the right boxes.</h5>
+            </div>
+            <div className="dashboardBody row">
               {/* <div className="bigItemWrapper">
                 <BigItem linkImage={this.linkBigItem} />
               </div> */}
@@ -56,10 +60,11 @@ class AdvicePage extends React.Component<RouteComponentProps<{type: string}>, {}
                 })}
               </div>
             </div>
+          </div>
         </Dashboard>
       </div>
     );
   }
 }
 
-export default AdvicePage;
+export default NewsPage;

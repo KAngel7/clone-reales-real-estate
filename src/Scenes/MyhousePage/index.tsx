@@ -13,7 +13,7 @@ const houseData = {
   img: 'http://mariusn.com/themes/reales/images/prop/1-1.png'
 };
 
-class MyhousePage extends React.Component<RouteComponentProps<any>, {}> {
+class MyhousePage extends React.Component<RouteComponentProps<{id: string}>, {}> {
   render() {
     return (
       <div className="myhousePage">

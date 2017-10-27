@@ -47,8 +47,7 @@ class InputMap extends React.Component<{}, InputMapState> {
       isShow: !this.state.isShow
     });
   }
-  onDragMarker = (childKey: any, childProps: any, mouse: any) => {
-    // function is just a stub to test callbacks
+  onDragMarker = (childKey: number, childProps: {}, mouse: Coords) => {
     this.setState({
       draggable: false,
       marker: {
@@ -59,7 +58,7 @@ class InputMap extends React.Component<{}, InputMapState> {
       }
     });
   }
-  onDragendMarker = (childKey: any, childProps: any, mouse: any) => {
+  onDragendMarker = (childKey: number, childProps: {}, mouse: Coords) => {
     this.setState({ draggable: true });
     reverseGeo(this.state.marker.position.lat, this.state.marker.position.lng).then(rs => {
       if (rs) {

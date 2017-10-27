@@ -9,14 +9,14 @@ import SearchForm from './Components/SearchForm';
 import { Link } from 'react-router-dom';
 
 interface HeaderProps {
-  clickToggle: any;
+  clickToggle: Function;
 }
 
-interface Header2State {
+interface HeaderState {
 
 }
 
-class Header extends React.Component<HeaderProps, Header2State> {
+class Header extends React.Component<HeaderProps, HeaderState> {
   constructor(props: HeaderProps) {
     super(props);
     this.state = {
@@ -32,7 +32,7 @@ class Header extends React.Component<HeaderProps, Header2State> {
             <span className="logoText">reales</span>
           </Link>
         </div>
-        <a href="#" className="navHandler" onClick={this.props.clickToggle}><Icon  name="bars" /></a>
+        <a href="#" className="navHandler" onClick={(e) => this.props.clickToggle()}><Icon  name="bars" /></a>
         <SearchForm />
         <div className="userMenuWrapper">
           <UserMenu />

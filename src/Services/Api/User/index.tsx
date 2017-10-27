@@ -1,6 +1,8 @@
 import axios from 'axios';
+import { apiServer } from '../Config';
+
 export const userAxios = axios.create({
-  baseURL: 'http://famimedical.com/api/user/',
+  baseURL: apiServer + '/api/user/',
 });
 const errorHandler = (err: any) => {
   if (err.response && err.response.data) {

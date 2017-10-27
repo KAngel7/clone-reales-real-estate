@@ -1,24 +1,24 @@
 import * as React from 'react';
 import './style.css';
-import { connect } from 'react-redux';
+import { connect, Dispatch } from 'react-redux';
 import { changeLanguage } from 'Redux/Modules/Status';
-import { getTranslation } from 'Services/Geo';
+import { getTranslation, SupportedLanguage } from 'Services/Geo';
 import { RootState } from 'Redux/Store';
 
 const mapStateToProps = (state: RootState) => ({
   lang: state.status.lang
 });
-const mapDispatchToProps = (dispatch: any) => ({
-  changeLanguage: (lang: 'en' | 'vn') => {
+const mapDispatchToProps = (dispatch: Dispatch<{}>) => ({
+  changeLanguage: (lang: SupportedLanguage) => {
     dispatch(changeLanguage(lang));
   }
 });
 interface LanguageSelectorProps {
-  changeLanguage: (lang: 'en' | 'vn') => void;
-  lang: 'en' | 'vn';
+  changeLanguage: (lang: SupportedLanguage) => void;
+  lang: SupportedLanguage;
 }
 class LanguageSelector extends React.Component<LanguageSelectorProps, {}> {
-  changeLanguage = (lang: 'en' | 'vn') => {
+  changeLanguage = (lang: SupportedLanguage) => {
     if (this.props.lang !== lang) {
       this.props.changeLanguage(lang);
     }
@@ -29,14 +29,14 @@ class LanguageSelector extends React.Component<LanguageSelectorProps, {}> {
         <span className="langText">{getTranslation(this.props.lang, 'Language')}: </span>
         <ul>
           <li
-            className={this.props.lang === 'en' ? ' active' : ''}
-            onClick={(e) => this.changeLanguage('en')}
+            className={this.props.lang === SupportedLanguage.en ? ' active' : ''}
+            onClick={(e) => this.changeLanguage(SupportedLanguage.en)}
           >
             <span className="flag uk" />
           </li>
           <li
-            className={this.props.lang === 'vn' ? ' active' : ''}
-            onClick={(e) => this.changeLanguage('vn')}
+            className={this.props.lang === SupportedLanguage.vn ? ' active' : ''}
+            onClick={(e) => this.changeLanguage(SupportedLanguage.vn)}
           >
             <span className="flag vn" />
           </li>

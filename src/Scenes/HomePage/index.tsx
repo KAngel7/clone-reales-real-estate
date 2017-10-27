@@ -5,7 +5,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import ListProperty from './Components/ListProperty';
 
-class HomePage extends React.Component<RouteComponentProps<any>, {}> {
+class HomePage extends React.Component<RouteComponentProps<{}>, {}> {
   render() {
     return (
       <div className="homePage">

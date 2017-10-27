@@ -1,3 +1,4 @@
+import { SupportedLanguage } from 'Services/Geo';
 /***********************************/
 /************* Actions *************/
 /***********************************/
@@ -7,7 +8,7 @@ const enum StatusActionType {
   LANGUAGE_CHANGE = 'LANGUAGE_CHANGE'
 }
 
-export function changeLanguage(lang: 'en' | 'vn') {
+export function changeLanguage(lang: SupportedLanguage) {
   return {
     type: StatusActionType.LANGUAGE_CHANGE,
     payload: lang
@@ -20,7 +21,7 @@ export function changeLanguage(lang: 'en' | 'vn') {
 
 export interface StatusState {
   isPersist: boolean;
-  lang: 'en' | 'vn';
+  lang: SupportedLanguage;
 }
 
 interface StatusAction {
@@ -30,7 +31,7 @@ interface StatusAction {
 
 export const initStatusState: StatusState = {
   isPersist: false,
-  lang: 'en'
+  lang: SupportedLanguage.en
 };
 
 const statusReducer = (state: StatusState = initStatusState, action: StatusAction) => {

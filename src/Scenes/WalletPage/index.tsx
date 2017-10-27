@@ -7,7 +7,7 @@ import WithdrawForm from './Components/WithdrawForm';
 import RequestForm from './Components/RequestForm';
 import Dashboard from 'Components/DashboardLayout';
 
-class WalletPage extends React.Component<RouteComponentProps<any>, {}> {
+class WalletPage extends React.Component<RouteComponentProps<{action: string}>, {}> {
   WalletPageSection: {
     myWallet: JSX.Element;
     deposit: JSX.Element;

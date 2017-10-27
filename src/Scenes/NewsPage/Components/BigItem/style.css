@@ -1,0 +1,10 @@
+.bigItemContainer{
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.bigItemContainer img{
+  width: 100%;
+  height: 100%;
+}

@@ -4,7 +4,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import Dashboard from 'Components/DashboardLayout';
 import SearchForm from './Components/SearchForm';
 
-class SearchPage extends React.Component<RouteComponentProps<any>, {}> {
+class SearchPage extends React.Component<RouteComponentProps<{}>, {}> {
   render() {
     return (
       <div className="searchPage">

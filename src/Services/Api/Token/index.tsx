@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { apiServer } from '../Config';
+
 const storage: Storage = localStorage || window.localStorage;
 var userToken: string | null = null;
 
@@ -21,5 +23,5 @@ export function setUserToken(token: string | null): void {
 }
 
 export function getAuthToken() {
-  return axios.get('http://famimedical.com/api/user', { headers: { token: userToken } });
+  return axios.get(apiServer + '/api/user', { headers: { token: userToken } });
 }

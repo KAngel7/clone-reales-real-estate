@@ -5,17 +5,18 @@ import { connect } from 'react-redux';
 import RLForm from 'Components/RegisterLoginForm';
 import UserMenu from 'Components/UserMenu';
 import { Link } from 'react-router-dom';
-import { getTranslation } from 'Services/Geo';
+import { getTranslation, SupportedLanguage } from 'Services/Geo';
 import LanguageSelector from 'Components/LanguageSelector';
+import { RootState } from 'Redux/Store';
 
-const mapStateToProps = (state: any) => ({
+const mapStateToProps = (state: RootState) => ({
   lang: state.status.lang,
   isPersist: state.status.isPersist,
   isLogin: state.user.isLogin
 });
 
 interface MenuBarProps {
-  lang: 'en' | 'vn';
+  lang: SupportedLanguage;
   isPersist: boolean;
   isLogin: boolean;
 }
@@ -104,7 +105,7 @@ class MenuBar extends React.Component<MenuBarProps, MenuBarState> {
               <Link to="/agent/search">{getTranslation(this.props.lang, 'Commercial')}</Link>
             </li>
             <li className="moreOption">
-              <Link to="/agent/search">{getTranslation(this.props.lang, 'Project')}</Link>
+              <Link to="/projects">{getTranslation(this.props.lang, 'Project')}</Link>
             </li>
             <li className="moreOption">
               <Link to="/agent/search">{getTranslation(this.props.lang, 'Find agent')}</Link>
