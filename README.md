@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App Typescript]
 
 Owner: huykhanh.cse@gmail.com
 
-Demo: https://kangel6.000webhostapp.com/
+Demo: https://kangel7-2.000webhostapp.com/
 
 ## Usage
 
