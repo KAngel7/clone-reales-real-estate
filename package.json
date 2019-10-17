@@ -16,7 +16,7 @@
     "@types/redux-persist": "^4.3.1",
     "@types/redux-promise-middleware": "0.0.8",
     "@types/redux-thunk": "^2.1.0",
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "google-map-react": "^0.24.0",
     "react": "^15.4.2",
     "react-dom": "^15.6.1",
